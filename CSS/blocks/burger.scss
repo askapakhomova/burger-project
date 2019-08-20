@@ -1,0 +1,29 @@
+.burger {
+  position: relative;
+  background: url('../img/video-bg.jpg') center center / cover no-repeat;
+}
+
+.burger__container {
+  height: 100%;
+}
+.burger__content {
+  display: flex;
+}
+
+.burger__left {
+  margin-top: -13px;
+  margin-left: 22px;
+}
+.burger__right {
+  margin-left: 12px;
+  padding-top: 114px;
+}
+
+.burger__subtitle {
+  font-size: 65px;
+  font-family: $lifehack;
+  color: #fff;
+  line-height: 0.92;
+  padding-top: 9px;
+  letter-spacing: -1.63px;
+}

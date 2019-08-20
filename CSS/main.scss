@@ -1,0 +1,24 @@
+//color
+$yellow: #f9b43b;
+$orange: #e45028;
+$black: #2f3234;
+$red: #e35028;
+
+//normalize
+@import "layout/normalize.scss";
+@import "layout/variables.scss";
+
+//setup
+@import "layout/base.scss";
+@import "layout/fonts.scss";
+
+//blocks
+@import "blocks/section.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/button.scss";
+@import "blocks/burger.scss";
+@import "blocks/title.scss";
+@import "blocks/arrow.scss";
+@import "blocks/best.scss";
+@import "blocks/reviews.scss";
