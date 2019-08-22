@@ -16,27 +16,40 @@
 .team__right {
   display: flex;
  flex-wrap: wrap;
-  margin: 12% 20%;
+ padding: 12% 0% 0% 17%;
 }
-
 .accordeon {
   padding-top: 46px;
+  display: flex;
 }
+.accordeon__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.accordeon__member-desk--nonactive{
+  overflow: hidden;
+  height: 0;
+  }
 .accordeon__member-desk {
-/*height: 0;
-overflow: hidden;*/
-margin-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
+
 .accordeon__picture {
+ width: 25%;
+  margin-right: 21px;
   display: inline-block;
-  max-width: 100%;
-  margin-right: 20px;
 }
 .accordeon__img {
-  width: 100px;
-  height: 99.8px;
+  max-width: 100px;
+  display: block;
+  height: 93px;
   border-radius: 50%;
   overflow: hidden;
+}
+.accordeon__member-desk {
+  // overflow: hidden;
+  // height: 0;
 }
 .accordeon__desc{
   display: inline-block;
@@ -44,7 +57,10 @@ margin-top: 10px;
   vertical-align: top;
 }
 .accordeon__title {
-  font-family: 'Ubuntu-Bold';
+@include Ubuntu(14px, 700);
   margin-bottom: 12px;
+}
 
+.accordeon__text {
+  @include Ubuntu(14px, 300);
 }

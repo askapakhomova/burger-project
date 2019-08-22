@@ -612,24 +612,38 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 12% 20%; }
+  padding: 12% 0% 0% 17%; }
 
 .accordeon {
-  padding-top: 46px; }
+  padding-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.accordeon__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.accordeon__member-desk--nonactive {
+  overflow: hidden;
+  height: 0; }
 
 .accordeon__member-desk {
-  /*height: 0;
-overflow: hidden;*/
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 35px; }
 
 .accordeon__picture {
-  display: inline-block;
-  max-width: 100%;
-  margin-right: 20px; }
+  width: 25%;
+  margin-right: 21px;
+  display: inline-block; }
 
 .accordeon__img {
-  width: 100px;
-  height: 99.8px;
+  max-width: 100px;
+  display: block;
+  height: 93px;
   border-radius: 50%;
   overflow: hidden; }
 
@@ -639,8 +653,15 @@ overflow: hidden;*/
   vertical-align: top; }
 
 .accordeon__title {
-  font-family: 'Ubuntu-Bold';
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   margin-bottom: 12px; }
+
+.accordeon__text {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
 
 .reviews__list {
   height: 100%;
