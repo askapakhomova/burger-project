@@ -1,0 +1,50 @@
+.team {
+  position: relative;
+  background: url('../img/section_team/team.png') center center / cover no-repeat;
+}
+.team__hover {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: #343739;
+  opacity: .93;
+  transition: opacity .3s;
+}
+.team__right {
+  display: flex;
+ flex-wrap: wrap;
+  margin: 12% 20%;
+}
+
+.accordeon {
+  padding-top: 46px;
+}
+.accordeon__member-desk {
+/*height: 0;
+overflow: hidden;*/
+margin-top: 10px;
+}
+.accordeon__picture {
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 20px;
+}
+.accordeon__img {
+  width: 100px;
+  height: 99.8px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.accordeon__desc{
+  display: inline-block;
+  max-width: 47%;
+  vertical-align: top;
+}
+.accordeon__title {
+  font-family: 'Ubuntu-Bold';
+  margin-bottom: 12px;
+
+}

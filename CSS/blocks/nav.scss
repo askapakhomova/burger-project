@@ -27,7 +27,6 @@
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font-size: 13px;
   text-transform: uppercase;
-  font-family: $ubuntu-medium;
+ @include Ubuntu(13px, 700);
 }

@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic");
 html {
   line-height: 1.15;
   /* 1 */
@@ -366,30 +367,6 @@ button {
   cursor: pointer; }
 
 @font-face {
-  font-family: 'Ubuntu-Medium';
-  src: url("Ubuntu-Medium.woff2") format("woff2"), url("Ubuntu-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Ubuntu-Bold';
-  src: url("Ubuntu-Bold.woff2") format("woff2"), url("Ubuntu-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url("Ubuntu.woff2") format("woff2"), url("Ubuntu.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Ubuntu-Light';
-  src: url("Ubuntu-Light.woff2") format("woff2"), url("Ubuntu-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
   font-family: 'gagalinregular';
   src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
@@ -431,7 +408,8 @@ button {
   justify-content: space-between; }
 
 .logo {
-  padding-top: 5px; }
+  padding-top: 5px;
+  max-width: 100%; }
 
 .header__buttons {
   display: -webkit-box;
@@ -472,9 +450,10 @@ button {
 .nav__link {
   text-decoration: none;
   color: #fff;
-  font-size: 13px;
   text-transform: uppercase;
-  font-family: "Ubuntu-Medium"; }
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13px;
+  font-weight: 700; }
 
 .button {
   padding: 12px 15px;
@@ -497,15 +476,21 @@ button {
 .burger__content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: auto 0;
+  -webkit-box-flex: .7;
+  -ms-flex: .7;
+  flex: .7; }
 
 .burger__left {
+  max-width: 100%;
   margin-top: -13px;
   margin-left: 22px; }
 
 .burger__right {
   margin-left: 12px;
-  padding-top: 114px; }
+  padding-top: 114px;
+  width: 50%; }
 
 .burger__subtitle {
   font-size: 65px;
@@ -520,11 +505,43 @@ button {
   font-family: "gagalinregular";
   color: #f9b43b; }
   .title--color--black {
+    font-size: 72px;
+    font-family: "gagalinregular";
     color: #2f3234;
     text-align: center;
     margin-bottom: 55px; }
   .title--color--white {
-    color: white; }
+    font-size: 14px;
+    font-family: "gagalinregular";
+    color: white;
+    margin-bottom: 17px; }
+  .title--color--white--arrow {
+    font-size: 14px;
+    font-family: "gagalinregular";
+    color: white;
+    margin-bottom: 17px; }
+    .title--color--white--arrow:before {
+      content: "";
+      width: 9px;
+      height: 7px;
+      display: inline-block;
+      vertical-align: middle;
+      background: no-repeat center center;
+      background: url("../img/section_team/Polygon_down.png");
+      margin-right: 10px; }
+    .title--color--white--arrow:hover {
+      font-size: 14px;
+      font-family: "gagalinregular";
+      color: #f9b43b;
+      margin-bottom: 17px; }
+      .title--color--white--arrow:hover:before {
+        content: "";
+        width: 9px;
+        height: 7px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/section_team/Polygon_up.png");
+        margin-right: 10px; }
 
 .arrow__scroll {
   width: 29px;
@@ -557,7 +574,8 @@ button {
     margin-right: 0px; }
 
 .best__pic {
-  margin-bottom: 38px; }
+  margin-bottom: 38px;
+  max-width: 100%; }
 
 .best__title {
   margin-bottom: 25px;
@@ -565,11 +583,64 @@ button {
   font-size: 24px; }
 
 .best__text p {
-  opacity: 0.8;
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
+  font-weight: 300;
   line-height: 1.71;
   color: #828080; }
+
+.team {
+  position: relative;
+  background: url("../img/section_team/team.png") center center/cover no-repeat; }
+
+.team__hover {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: #343739;
+  opacity: .93;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
+
+.team__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 12% 20%; }
+
+.accordeon {
+  padding-top: 46px; }
+
+.accordeon__member-desk {
+  /*height: 0;
+overflow: hidden;*/
+  margin-top: 10px; }
+
+.accordeon__picture {
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 20px; }
+
+.accordeon__img {
+  width: 100px;
+  height: 99.8px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.accordeon__desc {
+  display: inline-block;
+  max-width: 47%;
+  vertical-align: top; }
+
+.accordeon__title {
+  font-family: 'Ubuntu-Bold';
+  margin-bottom: 12px; }
 
 .reviews__list {
   height: 100%;
@@ -596,7 +667,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(181, 186, 189, 0.5);
+  background: rgba(20, 20, 20, 0.7);
   padding: 50px 0px 0px 19px;
   opacity: 0;
   -webkit-transition: opacity .3s;
@@ -610,9 +681,8 @@ button {
   font-style: normal; }
 
 .reviews__text {
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 300;
   line-height: 1.71;
   margin: 30px 18px 17px 0px; }

@@ -8,15 +8,19 @@
 }
 .burger__content {
   display: flex;
+  margin: auto 0;
+  flex: .7;
 }
 
 .burger__left {
+  max-width: 100%;
   margin-top: -13px;
   margin-left: 22px;
 }
 .burger__right {
   margin-left: 12px;
   padding-top: 114px;
+  width: 50%;
 }
 
 .burger__subtitle {

@@ -7,10 +7,13 @@ $red: #e35028;
 //normalize
 @import "layout/normalize.scss";
 @import "layout/variables.scss";
+@import "layout/mixin.scss";
 
 //setup
 @import "layout/base.scss";
 @import "layout/fonts.scss";
+
+
 
 //blocks
 @import "blocks/section.scss";
@@ -21,4 +24,5 @@ $red: #e35028;
 @import "blocks/title.scss";
 @import "blocks/arrow.scss";
 @import "blocks/best.scss";
+@import "blocks/team.scss";
 @import "blocks/reviews.scss";

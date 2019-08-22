@@ -1,19 +1,45 @@
-
 .title {
-  font-size: 72px;
-  font-family: $gagalin;
-  color: $yellow;
+  @include title(72px, $yellow);
 
- &--color {
-   
-   &--black {
-     color: $black;
-     text-align: center;
-     margin-bottom: 55px;
-   }
+  &--color {
+    &--black {
+      @include title(72px, $black);
+      text-align: center;
+      margin-bottom: 55px;
+    }
 
-   &--white {
-     color: white;
-   }
- }
+    &--white {
+      @include title(14px, white);
+      margin-bottom: 17px;
+    }
+
+    &--white--arrow {
+      @include title(14px, white);
+      margin-bottom: 17px;
+
+      &:before {
+        content: "";
+        width: 9px;
+        height: 7px;
+        display: inline-block;
+        vertical-align: middle;
+        background: no-repeat center center;
+        background: url('../img/section_team/Polygon_down.png');
+        margin-right: 10px;
+      }
+      &:hover {
+        @include title(14px, $yellow);
+        margin-bottom: 17px;
+        &:before {
+          content: "";
+          width: 9px;
+          height: 7px;
+          display: inline-block;
+          vertical-align: middle;
+          background: url('../img/section_team/Polygon_up.png');
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }

@@ -19,6 +19,7 @@ text-align: center;
 
 .best__pic {
   margin-bottom: 38px;
+  max-width: 100%;
 }
 
 .best__title {
@@ -27,9 +28,7 @@ text-align: center;
   font-size: 24px;
 }
 .best__text p {
-  opacity: 0.8;
-  font-family: $ubuntu;
-  font-size: 14px;
+  @include Ubuntu(14px, 300);
   line-height: 1.71;
   color: #828080;
 
