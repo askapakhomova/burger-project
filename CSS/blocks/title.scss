@@ -26,18 +26,13 @@
         background: no-repeat center center;
         background: url('../img/section_team/Polygon_down.png');
         margin-right: 10px;
+        transform:rotate(0deg);
       }
       &:hover {
         @include title(14px, $yellow);
         margin-bottom: 17px;
         &:before {
-          content: "";
-          width: 9px;
-          height: 7px;
-          display: inline-block;
-          vertical-align: middle;
-          background: url('../img/section_team/Polygon_up.png');
-          margin-right: 10px;
+          transform:rotate(180deg);
         }
       }
     }
