@@ -610,22 +610,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 12% 0% 0% 17%; }
 
 .accordeon {
-  padding-top: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.accordeon__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  padding-top: 46px; }
 
 .accordeon__member-desk--nonactive {
   overflow: hidden;
@@ -639,18 +631,15 @@ button {
   display: flex; }
 
 .accordeon__picture {
-  width: 25%;
   margin-right: 21px; }
 
 .accordeon__img {
   max-width: 100px;
-  display: block;
   height: 93px;
   border-radius: 50%;
   overflow: hidden; }
 
 .accordeon__desc {
-  display: inline-block;
   max-width: 47%;
   vertical-align: top; }
 
