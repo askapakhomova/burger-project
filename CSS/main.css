@@ -633,12 +633,14 @@ button {
 
 .accordeon__member-desk {
   margin-top: 10px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .accordeon__picture {
   width: 25%;
-  margin-right: 21px;
-  display: inline-block; }
+  margin-right: 21px; }
 
 .accordeon__img {
   max-width: 100px;
