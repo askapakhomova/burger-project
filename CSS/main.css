@@ -885,7 +885,7 @@ button {
     display: block;
     width: 0.6875rem;
     height: 0.5625rem;
-    background: url("/img/section_form/checkbox.png");
+    background: url("../img/section_form/checkbox.png");
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
