@@ -1,0 +1,43 @@
+.footer {
+  position: absolute;
+  min-width: 100%;
+  max-height: rem(60px);
+  background-color: $black;
+}
+
+.footer__col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__address {
+  text-decoration: none;
+  color:#fff;
+  font-family: $ubuntu-Light;
+  font-size: rem(14px);
+  font-style: normal;
+  line-height: rem(24px);
+}
+.footer__phone {
+  display: flex;
+ align-items: center;
+}
+.footer__phone-pic{
+  margin-right: rem(5px);
+}
+.contacts__phone {
+  text-decoration: none;
+  color: $red;
+  font-family: $ubuntu-Bold;
+  font-size: rem(14px);
+  font-style: normal;
+  line-height: rem(24px);
+}
+.social-networks__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social-networks__item {
+margin-right: rem(20px);
+}

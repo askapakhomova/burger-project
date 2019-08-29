@@ -11,3 +11,11 @@ $ubuntu: 'Ubuntu';
 $ubuntu-Light: 'Ubuntu-Light';
 $gagalin: 'gagalinregular';
 $lifehack: 'lifehackmedium';
+
+@function rem($px){
+@return $px / 16px + 0rem;
+}
+
+$tablets: 678px;
+$phones: 480px;
+$phones-small: 370px;

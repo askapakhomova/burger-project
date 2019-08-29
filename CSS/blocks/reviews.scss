@@ -26,20 +26,17 @@
   bottom: 0;
   left: 0;
   background: rgba(20, 20, 20, .7);
-  padding: 50px 0px 0px 19px;
+  padding: rem(50px) 0px 0px rem(19px);
   opacity: 0;
   transition: opacity .3s;
 }
 
 .reviews__name {
-  font-family: 'gagalinregular';
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
+  @include gagalin(rem(14px), white);
 }
 
 .reviews__text {
-  @include Ubuntu(14px, 300);
+  @include Ubuntu(rem(14px), 300);
   line-height: 1.71;
-  margin: 30px 18px 17px 0px;
+  margin: rem(30px) rem(18px) rem(17px) 0px;
 }

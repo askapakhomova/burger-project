@@ -1,7 +1,7 @@
 
 @mixin title($font-size, $color) {
-  font-size: $font-size;
   font-family: $gagalin;
+  font-size: $font-size;
   color: $color;
 }
 
@@ -9,4 +9,10 @@
   font-family: 'Ubuntu', sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
+}
+
+@mixin gagalin($font-size, $color) {
+  font-family: $gagalin;
+  font-size: $font-size;
+  color: $color;
 }

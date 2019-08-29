@@ -2,6 +2,7 @@
   position: relative;
   background: url('../img/section_team/team.png') center center / cover no-repeat;
 }
+
 .team__hover {
   color: #fff;
   position: absolute;
@@ -13,46 +14,71 @@
   opacity: .93;
   transition: opacity .3s;
 }
+
 .team__right {
   display: flex;
   flex-direction: column;
- padding: 12% 0% 0% 17%;
+  padding: 12% 0% 0% 17%;
 }
+
 .accordeon {
-  padding-top: 46px;
+  padding-top: rem(46px);
 }
+
 .accordeon__item {
-
-
-}
-.accordeon__member-desk--nonactive{
-  overflow: hidden;
-  height: 0;
+  margin-bottom: rem(35px);
+  a.title--color--white--arrow {
+    text-decoration: none;
+ 
   }
-.accordeon__member-desk {
-  margin-top: 10px;
-  margin-bottom: 35px;
-  display: flex;
+
+  .accordeon__member-desk {
+    height: 0;
+    overflow: hidden;
+  }
 }
 
-.accordeon__picture {
-  margin-right: 21px;
-}
-.accordeon__img {
-  max-width: 100px;
-  height: 93px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.accordeon__desc{
-  max-width: 47%;
-  vertical-align: top;
-}
-.accordeon__title {
-@include Ubuntu(14px, 700);
-  margin-bottom: 12px;
-}
+.accordeon__item {
+  &--active {
+    .title--color--white--arrow {
+      color: $yellow;
 
-.accordeon__text {
-  @include Ubuntu(14px, 300);
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+
+    .accordeon__member-desk {
+      margin-top: rem(10px);
+      display: inline-flex;
+      height: 100%;
+    }
+
+    .accordeon__picture {
+      margin-right: rem(21px);
+    }
+
+    .accordeon__img {
+      max-width: rem(100px);
+      height: rem(93px);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .accordeon__desc {
+      max-width: 47%;
+      vertical-align: top;
+    }
+
+    .accordeon__title {
+      @include Ubuntu(rem(14px), 700);
+      margin-bottom: rem(12px);
+    }
+
+
+    .accordeon__text {
+      @include Ubuntu(rem(14px), 300);
+    }
+  }
+
 }

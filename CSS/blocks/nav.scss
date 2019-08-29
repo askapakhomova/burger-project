@@ -9,12 +9,12 @@
 .nav__item {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  margin-right: rem(15px);
 
   &:after {
     content: "•";
     color: #fff;
-    margin-left: 14px;
+    margin-left: rem(14px);
   }
   &:last-child {
     margin-right: 0px;
@@ -28,5 +28,5 @@
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
- @include Ubuntu(13px, 700);
+ @include Ubuntu(rem(13px), 700);
 }

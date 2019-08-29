@@ -1,0 +1,69 @@
+.menu {
+  position: relative;
+  background: url('../img/section_menu/menu-bg.png') center center / cover no-repeat;
+}
+
+.title--color--white {
+  @include title(rem(72px), white);
+  position: absolute;
+  top: rem(111px);
+  left: rem(102px);
+}
+
+.accordeon-menu__list {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.accordeon-menu__item {
+  display: flex;
+}
+
+.accordeon-menu__content {
+  position: relative;
+  background: center center no-repeat / cover;
+  min-width: rem(80px);
+  text-decoration: none;
+}
+
+.accordeon-menu__title {
+  @include gagalin(rem(35px), white);
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(270deg);
+  top: 90%;
+  right: 0;
+  left: 0;
+  text-transform: uppercase;
+}
+
+.accordeon-menu__item .accordeon-menu__text {
+  overflow: hidden;
+  width: 0;
+}
+
+.accordeon-menu__item {
+  &--active {
+    .accordeon-menu__text {
+      background: rgba(18, 19, 20, .8);
+      transition: .3s linear;
+      min-width: rem(630px);
+      color: #fff;
+    }
+    .menu__text {
+    
+      max-width: 100%;
+      line-height: 1.8;
+      // transition: opacity .3s linear;
+      // transition-delay: .3s;
+      padding: rem(50px) rem(25px);
+    }
+  }
+}
+
+// .accordeon-menu__item.active .menu__text {
+//   opacity: 1;
+// }

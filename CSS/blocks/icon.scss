@@ -1,0 +1,56 @@
+//best
+
+.icon {
+  &--logo {
+    width: rem(92px);
+    height: rem(69px);
+  }
+
+  &--arrow-scroll {
+    width: rem(29px);
+    height: rem(14px);
+    display: block;
+    position: absolute;
+    bottom: rem(42px);
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &--meat {
+    width: rem(97px);
+    height: rem(89px);
+  }
+
+  &--hand {
+    width: rem(73px);
+    height: rem(85px);
+  }
+
+  &--natural {
+    width: rem(88px);
+    height: rem(75px);
+  }
+  &--phone {
+    width: rem(12px);
+    height: rem(11px);
+  }
+  &--vk {
+    width: rem(23px);
+    height: rem(13px);
+    opacity: 0.3;
+  }
+  &--fb {
+    width: rem(20px);
+    height: rem(20px);
+  }
+  &--inst {
+    width: rem(20px);
+    height: rem(20px);
+    opacity: 0.3;
+  }
+  &--twitter {
+    width: rem(20px);
+    height: rem(16px);
+    opacity: 0.3;
+  }
+}

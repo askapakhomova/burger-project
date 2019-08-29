@@ -14,20 +14,20 @@
 
 .burger__left {
   max-width: 100%;
-  margin-top: -13px;
-  margin-left: 22px;
+  margin-top: rem(-13px);
+  margin-left: rem(22px);
 }
 .burger__right {
-  margin-left: 12px;
-  padding-top: 114px;
+  margin-left: rem(12px);
+  padding-top: rem(114px);
   width: 50%;
 }
 
 .burger__subtitle {
-  font-size: 65px;
+  font-size: rem(65px);
   font-family: $lifehack;
   color: #fff;
   line-height: 0.92;
-  padding-top: 9px;
-  letter-spacing: -1.63px;
+  padding-top: rem(9px);
+  letter-spacing: rem(-1.63px);
 }
