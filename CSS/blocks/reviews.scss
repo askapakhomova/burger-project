@@ -1,5 +1,7 @@
+
 .reviews__list {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -16,8 +18,13 @@
     opacity: 1;
   }
 }
-}
 
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
+
+}
 .reviews__hover {
   color: #fff;
   position: absolute;
@@ -29,14 +36,63 @@
   padding: rem(50px) 0px 0px rem(19px);
   opacity: 0;
   transition: opacity .3s;
-}
+
+  @include tablets {
+    text-align: center;
+    padding: 0;
+  }
+  }
 
 .reviews__name {
   @include gagalin(rem(14px), white);
+
+  @include tablets {
+    text-align: center;
+    padding-top: rem(15px);
+  }
+
+  @include phones {
+    @include gagalin(rem(24px), white);
+    padding-top: rem(45px);
+    
+  }
 }
 
 .reviews__text {
   @include Ubuntu(rem(14px), 300);
   line-height: 1.71;
   margin: rem(30px) rem(18px) rem(17px) 0px;
+
+  @include tablets {
+    text-align: center;
+    margin: rem(12px) rem(45px) rem(12px) rem(45px);
+  }
+
+  @include phones {
+    display: none;
+  }
 }
+
+
+
+// .button--reviews {
+//   @include phones {
+//     visibility: hidden;
+
+//     &:after {
+//       content: 'Читать отзыв';
+//       visibility: visible;
+//       display: block;
+//       position: absolute;
+//       background-color: $black;
+//       width: 120px;
+//       height: 12px;
+//       border-radius: 5px;
+//       padding-top: 10%;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+// }
+

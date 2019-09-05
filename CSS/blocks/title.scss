@@ -7,6 +7,10 @@
       font-family: $gagalin;
       text-align: center;
       margin-bottom: rem(55px);
+
+      @include phones {
+        font-size: rem(50px);
+            }
     }
 
     &--white {
@@ -14,6 +18,7 @@
       font-family: $gagalin;
       margin-bottom: rem(17px);
     }
+
 
     &--white--arrow {
       @include title(rem(14px), white);

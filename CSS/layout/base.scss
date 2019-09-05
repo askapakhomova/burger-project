@@ -2,6 +2,22 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 14px;
+  }
+
+  @include phones-small {
+    font-size: 12px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -30,6 +46,7 @@ ul>li {
 }
 
 body {
+  font-family: $ubuntu-medium;
   font-size: rem(16px);
   line-height: 1.42;
   position: relative;
@@ -41,13 +58,15 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: rem(940px)+ rem(20px);
+  // min-width: rem(940px)+ rem(20px);
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: rem(950px);
+  position: relative;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

@@ -3,11 +3,13 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   padding-top: rem(5px);
-  max-width: 100%;
+
 }
 .header__buttons {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }

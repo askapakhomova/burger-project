@@ -20,32 +20,46 @@
             </svg>
           </div>
           <div class="header__buttons">
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">О нас</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">бургеры</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">команда</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">меню</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">отзывы</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">как мы работаем</a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="button" type="button">заказать</button>
+            <div class="menu__nav">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">О нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">бургеры</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">команда</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">меню</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">как мы работаем</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu__buttons">
+              <button class="button" type="button">заказать</button>
+              <!-- <a href="#" class="menu__link">
+                <img src="img/mobile-img/menu-burger.png" alt="" class="link">
+              </a> -->
+              <!-- slider -->
+              <div class="hamburger hamburger--slider">
+                  <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                  </div>
+                </div>
+                <!-- slider -->
+            </div>
           </div>
         </header>
         <div class="burger__content">
@@ -123,7 +137,6 @@
     </section>
     <section class="section team">
       <div class="team__hover">
-        <div class="team__right">
           <div class="title">команда</div>
           <div class="accordeon">
             <ul class="accordeon__list">
@@ -134,7 +147,7 @@
                     <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
                   </div>
                   <div class="accordeon__desc">
-                    <div class="accordeon__title">оператор</div>
+                    <div class="accordeon__title">Оператор</div>
                     <div class="accordeon__text">
                       <p>
                         С радостью поможет подобрать идеальный бургер и оформить заказ.
@@ -150,7 +163,7 @@
                     <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
                   </div>
                   <div class="accordeon__desc">
-                    <div class="accordeon__title">оператор</div>
+                    <div class="accordeon__title">Оператор</div>
                     <div class="accordeon__text">
                       <p>
                         С радостью поможет подобрать идеальный бургер и оформить заказ.
@@ -168,7 +181,7 @@
 
                   </div>
                   <div class="accordeon__desc">
-                    <div class="accordeon__title">оператор</div>
+                    <div class="accordeon__title">Оператор</div>
                     <div class="accordeon__text">
                       <p>
                         С радостью поможет подобрать идеальный бургер и оформить заказ.
@@ -186,7 +199,7 @@
 
                   </div>
                   <div class="accordeon__desc">
-                    <div class="accordeon__title">оператор</div>
+                    <div class="accordeon__title">Оператор</div>
                     <div class="accordeon__text">
                       <p>
                         С радостью поможет подобрать идеальный бургер и оформить заказ.
@@ -198,13 +211,12 @@
 
             </ul>
           </div>
-        </div>
       </div>
     </section>
     <section class="section menu">
       <div class="title title--color--white">меню</div>
       <ul class="accordeon-menu__list">
-        <li class="accordeon-menu__item accordeon-menu__item--active">
+        <li class="accordeon-menu__item">
           <a href="#" class="accordeon-menu__content" style="background-image: url('img/section_menu/meat.png')">
             <div class="accordeon-menu__title">для мясоедов</div>
           </a>
@@ -217,7 +229,7 @@
             </p>
           </div>
         </li>
-        <li class="accordeon-menu__item">
+        <li class="accordeon-menu__item accordeon-menu__item--active">
           <a href="" class="accordeon-menu__content" style="background-image: url('img/section_menu/vegan.png')">
             <div class="accordeon-menu__title">вегетарианское</div>
           </a>
@@ -246,20 +258,21 @@
       </ul>
     </section>
     <section class="section reviews">
-      <ul class="reviews__list">
-        <li class="reviews__item" style="background-image: url('img/photo_1.png')">
-          <div class="reviews__hover">
-            <div class="reviews__name">Константин спилберг</div>
-            <div class="reviews__text">
-              <p>
-                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
-                булочки
-                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-              </p>
-            </div>
-            <button type="button" class="button button--reviews">подробнее</button>
-          </div>
-        </li>
+       <ul class="reviews__list">
+            <li class="reviews__item" style="background-image: url('img/photo_1.png')">
+              <div class="reviews__hover">
+                    <div class="reviews__name">Константин спилберг</div>
+                    <div class="reviews__text">
+                      <p>
+                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                        булочки
+                        могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                      </p>
+                    </div>
+                    <button type="button" class="button button--reviews">подробнее</button>   
+                    <button type="button" class="button button--phones">Читать отзыв</button>                
+                </div>
+            </li>
         <li class="reviews__item" style="background-image: url('img/photo_2.png')">
           <div class="reviews__hover">
             <div class="reviews__name">Константин спилберг</div>
@@ -271,6 +284,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_3.png')">
@@ -284,6 +298,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_4.png')">
@@ -297,6 +312,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_5.png')">
@@ -310,6 +326,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_6.png')">
@@ -323,6 +340,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_7.png')">
@@ -336,6 +354,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_8.png')">
@@ -349,6 +368,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>  
           </div>
         </li>
 
@@ -357,7 +377,7 @@
     <section class="section form">
       <div class="container">
         <div class="title title--center">закажите доставку</div>
-        <div class="form">
+        <div class="form__feedback">
           <form action="" class="form__content">
             <div class="form__col">
               <div class="form__row">
@@ -398,31 +418,33 @@
             <div class="form__col">
               <div class="form__title">Комментарий</div>
               <textarea class="form__input form__input--textarea"></textarea>
-              <div class="form__row form__row--radio">
-                <label class="form__block form__block--radio">
-                  <input type="radio" name="radio" class="form__radiobutton">
-                  <div class="form__fake"></div>
-                  <div class="form__title form__title--radio">Потребуется сдача</div>
-                </label>
-                <label class="form__block form__block--radio">
-                  <input type="radio" name="radio" class="form__radiobutton">
-                  <div class="form__fake"></div>
-                  <div class="form__title form__title--radio">Оплата по карте</div>
-                </label>
-              </div>
-              <div class="form__row">
-                <label class="form__block form__block--checkbox">
-                  <input type="checkbox" name="checkbox" class="form__checkbox">
-                  <div class="form__fake-checkbox"></div>
-                  <div class="form__title form__title--checkbox">Не перезванивать</div>
-                </label>
-              </div>
-              <div class="form__row">
-                <div class="form__button">
-                  <button class="button" type="button">заказать</button>
+              <div class="form__buttons">
+                <div class="form__row form__row--radio">
+                  <label class="form__block form__block--radio">
+                    <input type="radio" name="radio" class="form__radiobutton">
+                    <div class="form__fake"></div>
+                    <div class="form__title form__title--radio">Потребуется сдача</div>
+                  </label>
+                  <label class="form__block form__block--radio">
+                    <input type="radio" name="radio" class="form__radiobutton">
+                    <div class="form__fake"></div>
+                    <div class="form__title form__title--radio">Оплата по карте</div>
+                  </label>
                 </div>
-                <div class="form__button">
-                  <button class="button button--nonactive" type="button">Очистить</button>
+                <div class="form__row">
+                  <label class="form__block form__block--checkbox">
+                    <input type="checkbox" name="checkbox" class="form__checkbox">
+                    <div class="form__fake-checkbox"></div>
+                    <div class="form__title form__title--checkbox">Не перезванивать</div>
+                  </label>
+                </div>
+                <div class="form__row">
+                  <div class="form__button">
+                    <button class="button" type="button">заказать</button>
+                  </div>
+                  <div class="form__button">
+                    <button class="button button--nonactive" type="button">Очистить</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -433,58 +455,88 @@
   </section>
   <section class="section map">
   </section>
+  <ul class="menu__fixed">
+    <li class="menu__fixed-item menu__fixed-item--active">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+    <li class="menu__fixed-item">
+      <button type="button" class="menu__fixed-link"></button>
+    </li>
+
+  </ul>
   </div>
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__col">
-          <!-- <div class="footer__col--right">  -->
-      <address class="footer__contacts">
-        <a href="#" class="footer__address">
-          Санкт-Петербург, ул.Бабушкина, д.12/1, 15
-        </a>
-        <div class="footer__phone">
-          <div class="footer__phone-pic">
-            <svg class="icon icon--phone">
-              <use xlink:href="icons/sprite.svg#phone"></use>
-            </svg>
+        <!-- <div class="footer__col--right">  -->
+        <address class="footer__contacts">
+          <a href="#" class="footer__address">
+            Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+          </a>
+          <div class="footer__phone">
+            <div class="footer__phone-pic">
+              <svg class="icon icon--phone">
+                <use xlink:href="icons/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <a href="tel:+78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
           </div>
-          <a href="tel:+78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
-        </div>
-      </address>
-    <!-- </div> -->
-    <!-- <div class="footer__col--left"> -->
-      <ul class="social-networks__list">
-        <li class="social-networks__item">
-          <div class="social-networks__pic">
-              <svg class="icon icon--vk">
-                  <use xlink:href="icons/sprite.svg#vk"></use>
-                </svg>
-          </div>
-        </li>
-        <li class="social-networks__item">
+        </address>
+        <!-- </div> -->
+        <!-- <div class="footer__col--left"> -->
+        <ul class="social-networks__list">
+          <li class="social-networks__item">
             <div class="social-networks__pic">
-                <svg class="icon icon--fb">
-                    <use xlink:href="icons/sprite.svg#fb"></use>
-                  </svg>
+              <svg class="icon icon--vk">
+                <use xlink:href="icons/sprite.svg#vk"></use>
+              </svg>
             </div>
           </li>
           <li class="social-networks__item">
-              <div class="social-networks__pic">
-                  <svg class="icon icon--inst">
-                      <use xlink:href="icons/sprite.svg#inst"></use>
-                    </svg>
-              </div>
-            </li>
-            <li class="social-networks__item">
-                <div class="social-networks__pic">
-                    <svg class="icon icon--twitter">
-                        <use xlink:href="icons/sprite.svg#twitter"></use>
-                      </svg>
-                </div>
-              </li>
-      </ul>
+            <div class="social-networks__pic">
+              <svg class="icon icon--fb">
+                <use xlink:href="icons/sprite.svg#fb"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="social-networks__item">
+            <div class="social-networks__pic">
+              <svg class="icon icon--inst">
+                <use xlink:href="icons/sprite.svg#inst"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="social-networks__item">
+            <div class="social-networks__pic">
+              <svg class="icon icon--twitter">
+                <use xlink:href="icons/sprite.svg#twitter"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
       </div>
-    <!-- </div> -->
+      <!-- </div> -->
     </div>
   </footer>
 </body>

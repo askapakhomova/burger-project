@@ -13,11 +13,13 @@ $red: #e35028;
 @import "layout/base.scss";
 @import "layout/fonts.scss";
 
-
+//media
+@import "layout/media.scss";
 
 //blocks
 @import "blocks/section.scss";
 @import "blocks/header.scss";
+@import "blocks/humburger.scss";
 @import "blocks/nav.scss";
 @import "blocks/button.scss";
 @import "blocks/burger.scss";
@@ -29,6 +31,8 @@ $red: #e35028;
 @import "blocks/form.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
+@import "blocks/menu-fixed.scss";
+
 
 //icons-sprite-svg
 @import "blocks/icon.scss";

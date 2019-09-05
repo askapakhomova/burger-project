@@ -1,7 +1,11 @@
 .form {
   position: relative;
-  color: #fff;
   background: url('../img/section_form/form-bg.png') center center / cover no-repeat;
+  color: #fff;
+
+  @include tablets {
+    background: url('../img/section_form/form-bg.png') 50% no-repeat;
+  }
 }
 .title {
 &--center {
@@ -11,6 +15,11 @@
 }
 .form__content {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__col {
@@ -20,6 +29,16 @@
   &:last-child {
     margin-right: 0px;
   }
+
+  @include tablets {
+    width: 63%;
+    margin: 0;
+  }
+
+  @include phones {
+    width: 95%;
+    margin: 0;
+  }
 }
 
 .form__row {
@@ -28,6 +47,10 @@
 
   &--radio {
     margin-bottom: rem(10px);
+
+    @include phones {
+
+    }
   }
 }
 
@@ -38,8 +61,15 @@
   &--radio {
     display: flex;
     align-items: center;
-    margin-right: 0;
-    
+    margin-right: 0;    
+
+  @include tablets {
+    max-width: 37%;
+  }
+
+  @include phones {
+    min-width: 62%;
+  }
   }
 
   &--checkbox {
@@ -47,10 +77,16 @@
     align-items: center;
     margin-right: 0;
   }
+
+  @include tablets {
+&:last-child {
+  margin-right: 0;
+}
+  }
 }
 .form__input {
   background: #fff;
-  border-radius: rem(3px);
+  border-radius: 3px;
   border: none;
   padding: rem(8px) rem(21px);
   width: 100%;
@@ -67,11 +103,12 @@
 }
 
 .form__title {
-  // position: relative;
+
   font-family: $ubuntu-Light;
   line-height: rem(24px);
   font-size: rem(14px);
   margin-bottom: rem(7px);
+
 
   &--radio {
     padding-top: rem(8px);
@@ -81,10 +118,17 @@
     padding-top: rem(8px);
   }
 }
-
+.form__buttons {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .form__fake {
-  width: rem(15px);
-  height: rem(15px);
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #ffffff;
   position: relative;
@@ -95,8 +139,8 @@
     content: "";
     position: absolute;
     display: block;
-    width: rem(7px);
-    height: rem(7px);
+    width: 7px;
+    height: 7px;
     background-color: $red;
     border-radius: 50%;
     top: 50%;
@@ -113,8 +157,8 @@
   -webkit-appearance: none;
 }
 .form__fake-checkbox {
-  width: rem(15px);
-  height: rem(15px);
+  width: 15px;
+  height: 15px;
   background-color: #ffffff;
   position: relative;
   display: inline-flex;
@@ -124,8 +168,8 @@
     content: "";
     position: absolute;
     display: block;
-     width: rem(11px);
-    height: rem(9px);
+    width: 11px;
+    height: 9px;
     background: url('../img/section_form/checkbox.png');
     top: 50%;
     left: 50%;

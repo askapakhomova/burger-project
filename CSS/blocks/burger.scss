@@ -10,17 +10,50 @@
   display: flex;
   margin: auto 0;
   flex: .7;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 23%;
+    flex: 1;
+  }
+  @include phones {
+    padding: 0 11%;
+    font-size: rem(52px);
+    flex: .8;
+  }
+
+  @include phones-small {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    flex: .8;
+  }
 }
 
 .burger__left {
-  max-width: 100%;
+  width: 50%;
   margin-top: rem(-13px);
-  margin-left: rem(22px);
+
+  @include tablets {
+    width: 100%;
+    margin-top: 0px;
+  }
+}
+.burger__img {
+  width: 100%;
 }
 .burger__right {
-  margin-left: rem(12px);
+  padding-left: rem(12px);
   padding-top: rem(114px);
   width: 50%;
+
+
+  @include tablets {
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .burger__subtitle {
@@ -30,4 +63,11 @@
   line-height: 0.92;
   padding-top: rem(9px);
   letter-spacing: rem(-1.63px);
+
+  @include phones {
+    font-size: rem(60px);
+  }
+ @include phones-small {
+  font-size: rem(58px);
+ }
 }
