@@ -1,6 +1,10 @@
 .title {
   @include title(rem(72px), $yellow);
 
+  @include phones {
+    font-size: rem(63px);
+  }
+
   &--color {
     &--black {
       @include title(rem(72px), $black);
@@ -39,6 +43,10 @@
         margin-right: rem(10px);
         transform: rotate(0deg);
       }
+
+    @include tablets {
+      font-size: rem(25px);
+    }
     }
   }
 }

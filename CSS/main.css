@@ -6,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic,greek-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -309,6 +309,18 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'gagalinregular';
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lifehackmedium';
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -348,7 +360,7 @@ ul > li {
   list-style: none; }
 
 body {
-  font-family: "Ubuntu-Medium";
+  font-family: 'Ubuntu', sans-serif;
   font-size: rem(16px);
   line-height: 1.42;
   position: relative;
@@ -380,17 +392,56 @@ button {
   border: none;
   cursor: pointer; }
 
-@font-face {
-  font-family: 'gagalinregular';
-  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+.icon--logo {
+  max-height: 100%;
+  width: 5.75rem;
+  height: 4.3125rem; }
 
-@font-face {
-  font-family: 'lifehackmedium';
-  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+.icon--arrow-scroll {
+  width: 1.8125rem;
+  height: 0.875rem;
+  display: block;
+  position: absolute;
+  bottom: 2.625rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%); }
+
+.icon--meat {
+  width: 6.0625rem;
+  height: 5.5625rem; }
+
+.icon--hand {
+  width: 4.5625rem;
+  height: 5.3125rem; }
+
+.icon--natural {
+  width: 5.5rem;
+  height: 4.6875rem; }
+
+.icon--phone {
+  width: 0.75rem;
+  height: 0.6875rem; }
+
+.icon--vk {
+  width: 1.4375rem;
+  height: 0.8125rem;
+  opacity: 0.3; }
+
+.icon--fb {
+  width: 1.25rem;
+  height: 1.25rem; }
+
+.icon--inst {
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0.3; }
+
+.icon--twitter {
+  width: 1.25rem;
+  height: 1rem;
+  opacity: 0.3; }
 
 .section {
   height: 100vh;
@@ -531,7 +582,8 @@ button {
 
 .hamburger--slider.is-active .hamburger-inner {
   -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
-  transform: translate3d(0, 10px, 0) rotate(45deg); }
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+  z-index: 10; }
 
 .hamburger--slider.is-active .hamburger-inner::before {
   -webkit-transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
@@ -542,6 +594,39 @@ button {
   -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
   transform: translate3d(0, -20px, 0) rotate(-90deg); }
 
+#hamburgerButton:target .menu__nav--active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 4;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0d0d0df5; }
+  #hamburgerButton:target .menu__nav--active .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #hamburgerButton:target .menu__nav--active .nav__item {
+    margin-bottom: 2.1875rem; }
+    #hamburgerButton:target .menu__nav--active .nav__item:after {
+      display: none; }
+  #hamburgerButton:target .menu__nav--active .nav__link {
+    font-size: 2.125rem;
+    text-align: center; }
+
 .menu__nav {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -551,38 +636,6 @@ button {
   @media screen and (max-width: 768px) {
     .menu__nav {
       display: none; } }
-  .menu__nav--active {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 4;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #0d0d0df5; }
-    .menu__nav--active .nav__list {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-    .menu__nav--active .nav__item {
-      margin-bottom: 2.1875rem; }
-      .menu__nav--active .nav__item:after {
-        display: none; }
-    .menu__nav--active .nav__link {
-      font-size: 2.125rem;
-      text-align: center; }
 
 .nav__list {
   display: -webkit-box;
@@ -611,8 +664,8 @@ button {
   color: #fff;
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 0.8125rem; }
 
 .menu__buttons {
   display: -webkit-box;
@@ -627,6 +680,7 @@ button {
   border-radius: 0.3125rem;
   background: #e35028;
   text-transform: uppercase;
+  font-weight: 500;
   color: #fff;
   font-size: 0.8125rem;
   margin-right: 1.5625rem; }
@@ -635,23 +689,23 @@ button {
     @media screen and (max-width: 480px) {
       .button--phones {
         visibility: visible;
-        margin: 0;
-        padding: 0.8125rem 1rem;
-        background: #2f3234;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 0.8125rem;
-        font-weight: 500; } }
+        margin: 1.8125rem 20px;
+        padding: 0.9375rem 1rem;
+        background: #2f3234; } }
   .button--reviews {
     background: #2f3234; }
     .button--reviews:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      .button--reviews {
+        margin: 1.6875rem 0 0 8.3125rem; } }
     @media screen and (max-width: 480px) {
       .button--reviews {
-        visibility: hidden; } }
+        display: none; } }
   .button--nonactive {
     background: transparent;
     text-transform: none;
-    font-family: "Ubuntu-Light";
+    font-family: 'ubuntulight';
     font-size: 0.875rem; }
 
 .hamburger {
@@ -687,9 +741,9 @@ button {
       -ms-flex-align: center;
       align-items: center;
       padding: 0 23%;
-      -webkit-box-flex: 1;
-      -ms-flex: 1;
-      flex: 1; } }
+      -webkit-box-flex: .8;
+      -ms-flex: .8;
+      flex: .8; } }
   @media screen and (max-width: 480px) {
     .burger__content {
       padding: 0 11%;
@@ -750,6 +804,9 @@ button {
   font-family: "gagalinregular";
   font-size: 4.5rem;
   color: #f9b43b; }
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 3.9375rem; } }
   .title--color--black {
     font-family: "gagalinregular";
     font-size: 4.5rem;
@@ -787,6 +844,9 @@ button {
       -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
       transform: rotate(0deg); }
+    @media screen and (max-width: 768px) {
+      .title--color--white--arrow {
+        font-size: 1.5625rem; } }
 
 .best {
   position: relative;
@@ -828,7 +888,8 @@ button {
 
 .best__pic {
   margin-bottom: 2.375rem;
-  max-width: 100%; }
+  max-width: 100%;
+  min-height: 5.5625rem; }
   @media screen and (max-width: 768px) {
     .best__pic {
       margin-bottom: 2.125rem; } }
@@ -847,8 +908,8 @@ button {
 
 .best__text p {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 0.875rem;
   font-weight: 300;
+  font-size: 0.875rem;
   line-height: 1.71;
   color: #828080; }
 
@@ -944,13 +1005,13 @@ button {
         max-width: 63%; } }
   .accordeon .accordeon__item--active .accordeon__title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 0.875rem;
     font-weight: 700;
+    font-size: 0.875rem;
     margin-bottom: 0.75rem; }
   .accordeon .accordeon__item--active .accordeon__text {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 0.875rem; }
 
 .menu {
   position: relative;
@@ -975,7 +1036,11 @@ button {
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .accordeon-menu__item {
   display: -webkit-box;
@@ -1006,6 +1071,15 @@ button {
   overflow: hidden;
   max-width: 0; }
 
+@media screen and (max-width: 480px) {
+  .accordeon-menu__item--active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; } }
+
 .accordeon-menu__item--active .accordeon-menu__text {
   background: rgba(18, 19, 20, 0.8);
   -webkit-transition: .3s linear;
@@ -1015,9 +1089,31 @@ button {
   color: #fff; }
   @media screen and (max-width: 768px) {
     .accordeon-menu__item--active .accordeon-menu__text {
-      max-width: 35rem; } }
+      max-width: 36.25rem; } }
+  @media screen and (max-width: 480px) {
+    .accordeon-menu__item--active .accordeon-menu__text .acco__exit {
+      top: 6px;
+      right: 6px;
+      width: 15px;
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+      transform: translate3d(0, 10px, 0) rotate(45deg);
+      margin-right: 0.125rem; }
+      .accordeon-menu__item--active .accordeon-menu__text .acco__exit:before {
+        content: "";
+        bottom: -20px;
+        width: 15px;
+        height: 3px;
+        position: absolute;
+        background-color: #fff;
+        -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+        transform: translate3d(0, -20px, 0) rotate(-90deg); } }
 
 .accordeon-menu__item .menu__text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
   max-width: 100%;
   line-height: 1.8;
   padding: 3.125rem 1.5625rem; }
@@ -1070,18 +1166,17 @@ button {
   @media screen and (max-width: 768px) {
     .reviews__name {
       text-align: center;
-      padding-top: 0.9375rem; } }
+      padding-top: 1.875rem; } }
   @media screen and (max-width: 480px) {
     .reviews__name {
       font-family: "gagalinregular";
       font-size: 1.5rem;
-      color: white;
-      padding-top: 2.8125rem; } }
+      color: white; } }
 
 .reviews__text {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 0.875rem;
   font-weight: 300;
+  font-size: 0.875rem;
   line-height: 1.71;
   margin: 1.875rem 1.125rem 1.0625rem 0px; }
   @media screen and (max-width: 768px) {
@@ -1176,7 +1271,11 @@ button {
   border-radius: 3px;
   border: none;
   padding: 0.5rem 1.3125rem;
-  width: 100%; }
+  width: 100%;
+  border: 2px solid transparent; }
+  .form__input:focus {
+    outline: 0;
+    border: 2px solid #f9b43b; }
   .form__input--textarea {
     resize: none;
     height: 6.875rem;
@@ -1186,9 +1285,10 @@ button {
   -webkit-appearance: none; }
 
 .form__title {
-  font-family: "Ubuntu-Light";
-  line-height: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.875rem;
+  line-height: 1.5rem;
   margin-bottom: 0.4375rem; }
   .form__title--radio {
     padding-top: 0.5rem; }
@@ -1212,8 +1312,8 @@ button {
     align-items: center; } }
 
 .form__fake {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: #ffffff;
   position: relative;
@@ -1226,8 +1326,8 @@ button {
   content: "";
   position: absolute;
   display: block;
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   background-color: #e35028;
   border-radius: 50%;
   top: 50%;
@@ -1283,8 +1383,11 @@ button {
 .footer {
   position: absolute;
   min-width: 100%;
-  max-height: 3.75rem;
-  background-color: #2f3234; }
+  background-color: #2f3234;
+  bottom: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  background: url("../img/footer-texture.png") center center/cover no-repeat; }
 
 .footer__col {
   display: -webkit-box;
@@ -1296,14 +1399,32 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .footer__col {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .footer__address {
   text-decoration: none;
   color: #fff;
-  font-family: "Ubuntu-Light";
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: 0.875rem;
   font-style: normal;
   line-height: 1.5rem; }
+  @media screen and (max-width: 480px) {
+    .footer__address {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .footer__phone {
   display: -webkit-box;
@@ -1312,6 +1433,12 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    .footer__phone {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 0.625rem; } }
 
 .footer__phone-pic {
   margin-right: 0.3125rem; }
@@ -1319,10 +1446,10 @@ button {
 .contacts__phone {
   text-decoration: none;
   color: #e35028;
-  font-family: "Ubuntu-Bold";
-  font-size: 0.875rem;
-  font-style: normal;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-style: normal; }
 
 .social-networks__list {
   display: -webkit-box;
@@ -1334,6 +1461,12 @@ button {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .social-networks__list {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 0.625rem; } }
 
 .social-networks__item {
   margin-right: 1.25rem; }
@@ -1370,54 +1503,3 @@ button {
     transform: translate(-50%, -50%); }
   .menu__fixed-link:last-child {
     margin-bottom: 0; }
-
-.icon--logo {
-  max-height: 100%;
-  width: 5.75rem;
-  height: 4.3125rem; }
-
-.icon--arrow-scroll {
-  width: 1.8125rem;
-  height: 0.875rem;
-  display: block;
-  position: absolute;
-  bottom: 2.625rem;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%); }
-
-.icon--meat {
-  width: 6.0625rem;
-  height: 5.5625rem; }
-
-.icon--hand {
-  width: 4.5625rem;
-  height: 5.3125rem; }
-
-.icon--natural {
-  width: 5.5rem;
-  height: 4.6875rem; }
-
-.icon--phone {
-  width: 0.75rem;
-  height: 0.6875rem; }
-
-.icon--vk {
-  width: 1.4375rem;
-  height: 0.8125rem;
-  opacity: 0.3; }
-
-.icon--fb {
-  width: 1.25rem;
-  height: 1.25rem; }
-
-.icon--inst {
-  width: 1.25rem;
-  height: 1.25rem;
-  opacity: 0.3; }
-
-.icon--twitter {
-  width: 1.25rem;
-  height: 1rem;
-  opacity: 0.3; }

@@ -90,6 +90,12 @@
   border: none;
   padding: rem(8px) rem(21px);
   width: 100%;
+  border: 2px solid transparent;
+  
+  &:focus {
+    outline: 0;
+    border: 2px solid #f9b43b;
+  }
 
   &--textarea {
     resize: none;
@@ -103,10 +109,10 @@
 }
 
 .form__title {
-
-  font-family: $ubuntu-Light;
-  line-height: rem(24px);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
   font-size: rem(14px);
+  line-height: rem(24px);
   margin-bottom: rem(7px);
 
 
@@ -127,8 +133,8 @@
   }
 }
 .form__fake {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: #ffffff;
   position: relative;
@@ -139,8 +145,8 @@
     content: "";
     position: absolute;
     display: block;
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background-color: $red;
     border-radius: 50%;
     top: 50%;

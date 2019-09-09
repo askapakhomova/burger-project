@@ -5,10 +5,7 @@ $black: #2f3234;
 $red: #e35028;
 
 //fonts
-$ubuntu-medium: 'Ubuntu-Medium';
-$ubuntu-Bold: 'Ubuntu-Bold';
-$ubuntu: 'Ubuntu';
-$ubuntu-Light: 'Ubuntu-Light';
+
 $gagalin: 'gagalinregular';
 $lifehack: 'lifehackmedium';
 
@@ -16,3 +13,8 @@ $lifehack: 'lifehackmedium';
 $tablets: 678px;
 $phones: 480px;
 $phones-small: 370px;
+
+
+@function rem($px){
+  @return $px / 16px + 0rem;
+  }

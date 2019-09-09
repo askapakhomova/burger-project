@@ -33,6 +33,7 @@ text-align: center;
 .best__pic {
   margin-bottom: rem(38px);
   max-width: 100%;
+  min-height: rem(89px);
 
 @include tablets {
  margin-bottom: rem(34px);
@@ -53,7 +54,9 @@ text-align: center;
   font-size: rem(24px);
 }
 .best__text p {
-  @include Ubuntu(rem(14px), 300);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: rem(14px);
   line-height: 1.71;
   color: #828080;
 

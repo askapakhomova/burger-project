@@ -1,22 +1,16 @@
-//color
-$yellow: #f9b43b;
-$orange: #e45028;
-$black: #2f3234;
-$red: #e35028;
+
 
 //normalize
 @import "layout/normalize.scss";
-@import "layout/variables.scss";
-@import "layout/mixin.scss";
-
-//setup
-@import "layout/base.scss";
 @import "layout/fonts.scss";
+@import "layout/mixin.scss";
+@import "layout/base.scss";
+@import "layout/variables.scss";
 
-//media
-@import "layout/media.scss";
+
 
 //blocks
+@import "blocks/icon.scss";
 @import "blocks/section.scss";
 @import "blocks/header.scss";
 @import "blocks/humburger.scss";
@@ -35,4 +29,3 @@ $red: #e35028;
 
 
 //icons-sprite-svg
-@import "blocks/icon.scss";

@@ -20,7 +20,8 @@
             </svg>
           </div>
           <div class="header__buttons">
-            <div class="menu__nav">
+            <div class="menu__nav" id="hamburgerMenu">
+                <div class="menu__nav--active" id="hamburgerMenu"></div>
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item">
@@ -48,17 +49,13 @@
               </nav>
             </div>
             <div class="menu__buttons">
-              <button class="button" type="button">заказать</button>
-              <!-- <a href="#" class="menu__link">
-                <img src="img/mobile-img/menu-burger.png" alt="" class="link">
-              </a> -->
-              <!-- slider -->
-              <div class="hamburger hamburger--slider">
-                  <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                  </div>
+              <button class="button" type="submit">заказать</button>
+              <div class="header__hamburger-button hamburger hamburger--slider" id="hamburgerButton">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
                 </div>
-                <!-- slider -->
+              </div>
+              <!-- slider -->
             </div>
           </div>
         </header>
@@ -137,80 +134,80 @@
     </section>
     <section class="section team">
       <div class="team__hover">
-          <div class="title">команда</div>
-          <div class="accordeon">
-            <ul class="accordeon__list">
-              <li class="accordeon__item">
-                <a href="#" class="title title--color--white--arrow">Дэниэл Редклиф</a>
-                <div class="accordeon__member-desk">
-                  <div class="accordeon__picture">
-                    <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
-                  </div>
-                  <div class="accordeon__desc">
-                    <div class="accordeon__title">Оператор</div>
-                    <div class="accordeon__text">
-                      <p>
-                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                      </p>
-                    </div>
+        <div class="title">команда</div>
+        <div class="accordeon">
+          <ul class="accordeon__list">
+            <li class="accordeon__item">
+              <a href="#" class="title title--color--white--arrow">Дэниэл Редклиф</a>
+              <div class="accordeon__member-desk">
+                <div class="accordeon__picture">
+                  <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
+                </div>
+                <div class="accordeon__desc">
+                  <div class="accordeon__title">Оператор</div>
+                  <div class="accordeon__text">
+                    <p>
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
                   </div>
                 </div>
-              </li>
-              <li class="accordeon__item accordeon__item--active">
-                <a href="#" class="title title--color--white--arrow">Ричард Джеймс</a>
-                <div class="accordeon__member-desk accordeon__member-desk">
-                  <div class="accordeon__picture">
-                    <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
-                  </div>
-                  <div class="accordeon__desc">
-                    <div class="accordeon__title">Оператор</div>
-                    <div class="accordeon__text">
-                      <p>
-                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                      </p>
-                    </div>
+              </div>
+            </li>
+            <li class="accordeon__item accordeon__item--active">
+              <a href="#" class="title title--color--white--arrow">Ричард Джеймс</a>
+              <div class="accordeon__member-desk accordeon__member-desk">
+                <div class="accordeon__picture">
+                  <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
+                </div>
+                <div class="accordeon__desc">
+                  <div class="accordeon__title">Оператор</div>
+                  <div class="accordeon__text">
+                    <p>
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
                   </div>
                 </div>
-              </li>
-              <li class="accordeon__item">
-                <a href="#" class="title title--color--white--arrow">Джейк Финн</a>
-                <div class="accordeon__member-desk">
-                  <div class="accordeon__picture">
+              </div>
+            </li>
+            <li class="accordeon__item">
+              <a href="#" class="title title--color--white--arrow">Джейк Финн</a>
+              <div class="accordeon__member-desk">
+                <div class="accordeon__picture">
 
-                    <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
+                  <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
 
-                  </div>
-                  <div class="accordeon__desc">
-                    <div class="accordeon__title">Оператор</div>
-                    <div class="accordeon__text">
-                      <p>
-                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                      </p>
-                    </div>
+                </div>
+                <div class="accordeon__desc">
+                  <div class="accordeon__title">Оператор</div>
+                  <div class="accordeon__text">
+                    <p>
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
                   </div>
                 </div>
-              </li>
-              <li class="accordeon__item">
-                <a href="#" class="title title--color--white--arrow">Николай Иванов</a>
-                <div class="accordeon__member-desk">
-                  <div class="accordeon__picture">
+              </div>
+            </li>
+            <li class="accordeon__item">
+              <a href="#" class="title title--color--white--arrow">Николай Иванов</a>
+              <div class="accordeon__member-desk">
+                <div class="accordeon__picture">
 
-                    <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
+                  <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
 
-                  </div>
-                  <div class="accordeon__desc">
-                    <div class="accordeon__title">Оператор</div>
-                    <div class="accordeon__text">
-                      <p>
-                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                      </p>
-                    </div>
+                </div>
+                <div class="accordeon__desc">
+                  <div class="accordeon__title">Оператор</div>
+                  <div class="accordeon__text">
+                    <p>
+                      С радостью поможет подобрать идеальный бургер и оформить заказ.
+                    </p>
                   </div>
                 </div>
-              </li>
+              </div>
+            </li>
 
-            </ul>
-          </div>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="section menu">
@@ -221,19 +218,7 @@
             <div class="accordeon-menu__title">для мясоедов</div>
           </a>
           <div class="accordeon-menu__text">
-            <p class="menu__text">
-              Бургер — одно из наиболее популярных блюд фастфуда во всём мире. Традиционно эта разновидность сэндвича
-              состоит из аккуратно сложенных между двух булочек ингредиентов: котлеты, листа салата, дольки помидора и
-              ломтика сыра. Но используя особые приправы и соусы, повара питерских ресторанов и кафе получают настоящие
-              шедевры.
-            </p>
-          </div>
-        </li>
-        <li class="accordeon-menu__item accordeon-menu__item--active">
-          <a href="" class="accordeon-menu__content" style="background-image: url('img/section_menu/vegan.png')">
-            <div class="accordeon-menu__title">вегетарианское</div>
-          </a>
-          <div class="accordeon-menu__text">
+            <div class="acco__exit"></div>
             <p class="menu__text">
               Бургер — одно из наиболее популярных блюд фастфуда во всём мире. Традиционно эта разновидность сэндвича
               состоит из аккуратно сложенных между двух булочек ингредиентов: котлеты, листа салата, дольки помидора и
@@ -243,10 +228,25 @@
           </div>
         </li>
         <li class="accordeon-menu__item">
+          <a href="" class="accordeon-menu__content" style="background-image: url('img/section_menu/vegan.png')">
+            <div class="accordeon-menu__title">вегетарианское</div>
+          </a>
+          <div class="accordeon-menu__text">
+            <div class="acco__exit"></div>
+            <p class="menu__text">
+              Бургер — одно из наиболее популярных блюд фастфуда во всём мире. Традиционно эта разновидность сэндвича
+              состоит из аккуратно сложенных между двух булочек ингредиентов: котлеты, листа салата, дольки помидора и
+              ломтика сыра. Но используя особые приправы и соусы, повара питерских ресторанов и кафе получают настоящие
+              шедевры.
+            </p>
+          </div>
+        </li>
+        <li class="accordeon-menu__item  accordeon-menu__item--active">
           <a href="" class="accordeon-menu__content" style="background-image: url('img/section_menu/diet.png')">
             <div class="accordeon-menu__title">диетическое</div>
           </a>
           <div class="accordeon-menu__text">
+            <div class="acco__exit"></div>
             <p class="menu__text">
               Бургер — одно из наиболее популярных блюд фастфуда во всём мире. Традиционно эта разновидность сэндвича
               состоит из аккуратно сложенных между двух булочек ингредиентов: котлеты, листа салата, дольки помидора и
@@ -258,21 +258,21 @@
       </ul>
     </section>
     <section class="section reviews">
-       <ul class="reviews__list">
-            <li class="reviews__item" style="background-image: url('img/photo_1.png')">
-              <div class="reviews__hover">
-                    <div class="reviews__name">Константин спилберг</div>
-                    <div class="reviews__text">
-                      <p>
-                        Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
-                        булочки
-                        могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                      </p>
-                    </div>
-                    <button type="button" class="button button--reviews">подробнее</button>   
-                    <button type="button" class="button button--phones">Читать отзыв</button>                
-                </div>
-            </li>
+      <ul class="reviews__list">
+        <li class="reviews__item" style="background-image: url('img/photo_1.png')">
+          <div class="reviews__hover">
+            <div class="reviews__name">Константин спилберг</div>
+            <div class="reviews__text">
+              <p>
+                Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                булочки
+                могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+              </p>
+            </div>
+            <button type="button" class="button button--reviews">подробнее</button>
+            <button type="button" class="button button--phones">Читать отзыв</button>
+          </div>
+        </li>
         <li class="reviews__item" style="background-image: url('img/photo_2.png')">
           <div class="reviews__hover">
             <div class="reviews__name">Константин спилберг</div>
@@ -284,7 +284,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_3.png')">
@@ -298,7 +298,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_4.png')">
@@ -312,7 +312,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_5.png')">
@@ -326,7 +326,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_6.png')">
@@ -340,7 +340,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_7.png')">
@@ -354,7 +354,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
         <li class="reviews__item" style="background-image: url('img/photo_8.png')">
@@ -368,7 +368,7 @@
               </p>
             </div>
             <button type="button" class="button button--reviews">подробнее</button>
-            <button type="button" class="button button--phones">Читать отзыв</button>  
+            <button type="button" class="button button--phones">Читать отзыв</button>
           </div>
         </li>
 
@@ -416,8 +416,10 @@
               </div>
             </div>
             <div class="form__col">
-              <div class="form__title">Комментарий</div>
-              <textarea class="form__input form__input--textarea"></textarea>
+              <label class="form__block">
+                <div class="form__title">Комментарий</div>
+                <textarea class="form__input form__input--textarea"></textarea>
+              </label>
               <div class="form__buttons">
                 <div class="form__row form__row--radio">
                   <label class="form__block form__block--radio">
@@ -440,7 +442,7 @@
                 </div>
                 <div class="form__row">
                   <div class="form__button">
-                    <button class="button" type="button">заказать</button>
+                    <button class="button" type="submit">заказать</button>
                   </div>
                   <div class="form__button">
                     <button class="button button--nonactive" type="button">Очистить</button>
@@ -451,94 +453,90 @@
         </div>
         </form>
       </div>
-  </div>
-  </section>
-  <section class="section map">
-  </section>
-  <ul class="menu__fixed">
-    <li class="menu__fixed-item menu__fixed-item--active">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-    <li class="menu__fixed-item">
-      <button type="button" class="menu__fixed-link"></button>
-    </li>
-
-  </ul>
-  </div>
-  <footer class="footer">
-    <div class="container footer__container">
-      <div class="footer__col">
-        <!-- <div class="footer__col--right">  -->
-        <address class="footer__contacts">
-          <a href="#" class="footer__address">
-            Санкт-Петербург, ул.Бабушкина, д.12/1, 15
-          </a>
-          <div class="footer__phone">
-            <div class="footer__phone-pic">
-              <svg class="icon icon--phone">
-                <use xlink:href="icons/sprite.svg#phone"></use>
-              </svg>
-            </div>
-            <a href="tel:+78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
+    </section>
+    <section class="section map">
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__col">
+            <!-- <div class="footer__col--right">  -->
+            <address class="footer__contacts">
+              <a href="#" class="footer__address">
+                Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+              </a>
+              <div class="footer__phone">
+                <div class="footer__phone-pic">
+                  <svg class="icon icon--phone">
+                    <use xlink:href="icons/sprite.svg#phone"></use>
+                  </svg>
+                </div>
+                <a href="tel:+78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
+              </div>
+            </address>
+            <ul class="social-networks__list">
+              <li class="social-networks__item">
+                <div class="social-networks__pic">
+                  <svg class="icon icon--vk">
+                    <use xlink:href="icons/sprite.svg#vk"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="social-networks__item">
+                <div class="social-networks__pic">
+                  <svg class="icon icon--fb">
+                    <use xlink:href="icons/sprite.svg#fb"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="social-networks__item">
+                <div class="social-networks__pic">
+                  <svg class="icon icon--inst">
+                    <use xlink:href="icons/sprite.svg#inst"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="social-networks__item">
+                <div class="social-networks__pic">
+                  <svg class="icon icon--twitter">
+                    <use xlink:href="icons/sprite.svg#twitter"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
           </div>
-        </address>
-        <!-- </div> -->
-        <!-- <div class="footer__col--left"> -->
-        <ul class="social-networks__list">
-          <li class="social-networks__item">
-            <div class="social-networks__pic">
-              <svg class="icon icon--vk">
-                <use xlink:href="icons/sprite.svg#vk"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="social-networks__item">
-            <div class="social-networks__pic">
-              <svg class="icon icon--fb">
-                <use xlink:href="icons/sprite.svg#fb"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="social-networks__item">
-            <div class="social-networks__pic">
-              <svg class="icon icon--inst">
-                <use xlink:href="icons/sprite.svg#inst"></use>
-              </svg>
-            </div>
-          </li>
-          <li class="social-networks__item">
-            <div class="social-networks__pic">
-              <svg class="icon icon--twitter">
-                <use xlink:href="icons/sprite.svg#twitter"></use>
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- </div> -->
-    </div>
-  </footer>
+        </div>
+      </footer>
+    </section>
+    <ul class="menu__fixed">
+      <li class="menu__fixed-item menu__fixed-item--active">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+      <li class="menu__fixed-item">
+        <button type="button" class="menu__fixed-link"></button>
+      </li>
+
+    </ul>
+  </div>
 </body>
 
 </html>

@@ -48,18 +48,19 @@
 
   @include tablets {
     text-align: center;
-    padding-top: rem(15px);
+    padding-top: rem(30px);
   }
 
   @include phones {
     @include gagalin(rem(24px), white);
-    padding-top: rem(45px);
     
   }
 }
 
 .reviews__text {
-  @include Ubuntu(rem(14px), 300);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: rem(14px);
   line-height: 1.71;
   margin: rem(30px) rem(18px) rem(17px) 0px;
 
