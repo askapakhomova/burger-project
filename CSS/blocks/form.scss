@@ -155,7 +155,11 @@
     opacity: 0;
     transition: .2s;
 }
-
+.form__radiobutton {
+  @include phones {
+visibility: hidden;
+}
+}
 .form__radiobutton:checked + .form__fake:before {
   opacity: 1;
 }

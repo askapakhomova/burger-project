@@ -594,7 +594,7 @@ button {
   -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
   transform: translate3d(0, -20px, 0) rotate(-90deg); }
 
-#hamburgerButton:target .menu__nav--active {
+#hamburgerButton:target + .menu__nav--active {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -611,7 +611,7 @@ button {
   -ms-flex-align: center;
   align-items: center;
   background-color: #0d0d0df5; }
-  #hamburgerButton:target .menu__nav--active .nav__list {
+  #hamburgerButton:target + .menu__nav--active .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -619,11 +619,11 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  #hamburgerButton:target .menu__nav--active .nav__item {
+  #hamburgerButton:target + .menu__nav--active .nav__item {
     margin-bottom: 2.1875rem; }
-    #hamburgerButton:target .menu__nav--active .nav__item:after {
+    #hamburgerButton:target + .menu__nav--active .nav__item:after {
       display: none; }
-  #hamburgerButton:target .menu__nav--active .nav__link {
+  #hamburgerButton:target + .menu__nav--active .nav__link {
     font-size: 2.125rem;
     text-align: center; }
 
@@ -1339,6 +1339,10 @@ button {
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s; }
+
+@media screen and (max-width: 480px) {
+  .form__radiobutton {
+    visibility: hidden; } }
 
 .form__radiobutton:checked + .form__fake:before {
   opacity: 1; }
