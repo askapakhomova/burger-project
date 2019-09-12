@@ -165,6 +165,9 @@ visibility: hidden;
 }
 .form__checkbox {
   -webkit-appearance: none;
+  @include phones {
+    visibility: hidden;
+    }
 }
 .form__fake-checkbox {
   width: 15px;

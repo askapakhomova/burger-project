@@ -1349,6 +1349,9 @@ button {
 
 .form__checkbox {
   -webkit-appearance: none; }
+  @media screen and (max-width: 480px) {
+    .form__checkbox {
+      visibility: hidden; } }
 
 .form__fake-checkbox {
   width: 15px;
