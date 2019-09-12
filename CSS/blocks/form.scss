@@ -45,6 +45,13 @@
   display: flex;
   margin-bottom: rem(19px);
 
+  &--hidden-on-mob {
+
+    @include phones {
+  margin-right: rem(-19px);
+    }
+  }
+
   &--radio {
     margin-bottom: rem(10px);
 
@@ -57,6 +64,13 @@
 .form__block {
   flex: 1;
   margin-right: rem(19px);
+
+  &--hidden-on-mob {
+
+    @include phones {
+      display: none;
+    }
+  }
 
   &--radio {
     display: flex;
@@ -114,8 +128,7 @@
   font-size: rem(14px);
   line-height: rem(24px);
   margin-bottom: rem(7px);
-
-
+ 
   &--radio {
     padding-top: rem(8px);
   }
@@ -123,6 +136,7 @@
   &--checkbox {
     padding-top: rem(8px);
   }
+ 
 }
 .form__buttons {
   @include phones {

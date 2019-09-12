@@ -40,7 +40,8 @@ text-align: center;
 }
 
 @include phones {
- margin-right: rem(28px);
+ margin-right: rem(48px);
+ min-width: rem(89px);
 }
 }
 .best__desc {
@@ -52,6 +53,7 @@ text-align: center;
   margin-bottom: rem(15px);
   font-family: $lifehack;
   font-size: rem(24px);
+
 }
 .best__text p {
   font-family: 'Ubuntu', sans-serif;

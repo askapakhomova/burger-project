@@ -7,6 +7,10 @@
 .logo {
   padding-top: rem(5px);
 
+  @include tablets {
+    z-index: 10;
+  }
+
 }
 .header__buttons {
   display: flex;

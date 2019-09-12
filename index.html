@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="CSS/main.css">
+  <script type="text/javascript" src="script.js"></script>
   <title>Burger</title>
 </head>
 
@@ -20,9 +21,8 @@
             </svg>
           </div>
           <div class="header__buttons">
-            <div class="menu__nav" id="hamburgerMenu">
-                <div class="menu__nav--active" id="hamburgerMenu"></div>
-              <nav class="nav">
+            <nav class="menu__nav" id="hamburgerMenu">
+              <!-- <nav class="nav"> -->
                 <ul class="nav__list">
                   <li class="nav__item">
                     <a href="#" class="nav__link">О нас</a>
@@ -46,15 +46,15 @@
                     <a href="#" class="nav__link">контакты</a>
                   </li>
                 </ul>
-              </nav>
-            </div>
+              <!-- </nav> -->
+            </nav>
             <div class="menu__buttons">
               <button class="button" type="submit">заказать</button>
-              <div class="header__hamburger-button hamburger hamburger--slider" id="hamburgerButton">
+              <a href="" id="hamburgerBtn" class="header__hamburger-button hamburger hamburger--slider">
                 <div class="hamburger-box">
                   <div class="hamburger-inner"></div>
                 </div>
-              </div>
+              </a>
               <!-- slider -->
             </div>
           </div>
@@ -396,7 +396,7 @@
                   <input type="text" class="form__input">
                 </label>
               </div>
-              <div class="form__row">
+              <div class="form__row form__row--hidden-on-mob">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
                   <input type="text" class="form__input">
@@ -409,7 +409,7 @@
                   <div class="form__title">Квартира</div>
                   <input type="text" class="form__input">
                 </label>
-                <label class="form__block">
+                <label class="form__block form__block--hidden-on-mob">
                   <div class="form__title">Этаж</div>
                   <input type="text" class="form__input">
                 </label>
