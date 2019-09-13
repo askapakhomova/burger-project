@@ -22,11 +22,10 @@
 .footer__address {
   text-decoration: none;
   color:#fff;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-family: 'ubuntulight';
   font-size: rem(14px);
   font-style: normal;
-  line-height: rem(24px);
+  line-height: 1.71;
 
   @include phones {
     justify-content: center;
@@ -48,8 +47,7 @@
   text-decoration: none;
   color: $red;
   line-height: rem(24px);
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
+  font-family: 'ubuntubold';
   font-style: normal;
 }
 .social-networks__list {

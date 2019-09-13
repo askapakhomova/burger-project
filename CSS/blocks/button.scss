@@ -8,6 +8,7 @@
   border-radius: rem(5px);
   background: $red;
   text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   color: #fff;
   font-size: rem(13px);
@@ -43,7 +44,8 @@
   &--nonactive {
     background: transparent;
     text-transform: none;
-    font-family: 'ubuntulight';
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     font-size: rem(14px);
   }
 }
