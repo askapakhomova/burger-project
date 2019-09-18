@@ -15,6 +15,17 @@
     bottom: rem(42px);
     left: 50%;
     transform: translate(-50%);
+
+    &--left {
+      width: rem(29px);
+      height: rem(27px);
+      transform: translate(-50%) rotate(90deg);
+    }
+    &--right {
+      width: rem(29px);
+      height: rem(27px);
+      transform: translate(50%) rotate(-90deg);
+    }
   }
 
   &--meat {
@@ -54,4 +65,37 @@
     height: rem(16px);
     opacity: 0.3;
   }
+  &--burger {
+    width: rem(46px);
+    height: rem(44px);
+  }
+  &--kkal {
+    width: rem(60px);
+    height: rem(60px);
+    opacity: 0.5;
+  }
+&--beef {
+  width: rem(44px);
+  height: rem(39px);
+}
+&--buns {
+  width: rem(48px);
+  height: rem(30px);
+}
+&--salad {
+  width: rem(38px);
+  height: rem(38px);
+}
+&--sause {
+  width: rem(41px);
+  height: rem(43px);
+}
+&--cucumber {
+  width: rem(43px);
+  height: rem(37px);
+}
+&--cheese {
+  width: rem(39px);
+  height: rem(34px);
+}
 }

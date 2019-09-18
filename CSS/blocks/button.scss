@@ -14,6 +14,12 @@
   font-size: rem(13px);
   margin-right: rem(25px);
 
+  &--slider {
+    padding: rem(12px) rem(16px);
+    margin-right: 0;
+    font-size: rem(13px);
+  }
+
   &--phones {
     visibility: hidden;
 

@@ -22,7 +22,8 @@
 .footer__address {
   text-decoration: none;
   color:#fff;
-  font-family: 'ubuntulight';
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
   font-size: rem(14px);
   font-style: normal;
   line-height: 1.71;
@@ -44,10 +45,11 @@
   margin-right: rem(5px);
 }
 .contacts__phone {
-  text-decoration: none;
   color: $red;
   line-height: rem(24px);
-  font-family: 'ubuntubold';
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
   font-style: normal;
 }
 .social-networks__list {
