@@ -1,28 +1,18 @@
-var hamburgerPopup = document.querySelector('#burgerPopup');
+var burgerPopup = document.querySelector('#burgerPopup');
+var burgerPopupAnimated = document.querySelector('#burgerPopupAnimated');
 
 function openBurgerPopup() {
-  hamburgerPopup.classList.add('active');
+  burgerPopup.classList.add('active');
 }
 function closeBurgerPopup() {
-  hamburgerPopup.classList.remove('active');
+  burgerPopup.classList.remove('active');
 }
 
-hamburgerPopup.addEventListener('click', function(e){
+burgerPopup.addEventListener('click', function(e){
   e.preventDefault();
-  if(hamburgerPopup.classList.contains('active')) {
+  if(burgerPopup.classList.contains('active')) {
     closeBurgerPopup();
   } else {
      openBurgerPopup();
-  }
-});
-
-hamburgerPopup.addEventListener('click', function (e) {
-  e.preventDefault();
-  if(e.target.classList.contains('burger-slider__popup-menu')){
-    hamburgerPopup.classList.add('fadeOut');
-    setTimeout(() => {
-      closeBurgerPopup();
-      hamburgerPopup.classList.remove('fadeOut');
-  }, 400);
   }
 });

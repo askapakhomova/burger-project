@@ -3602,9 +3602,20 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__container {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .burger-slider__slider {
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__slider {
+      margin-top: 2.75rem; } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__slider {
+      margin-top: 4.25rem; } }
 
 .burger-slider__list {
   display: -webkit-box;
@@ -3621,7 +3632,8 @@ button {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 3.125rem 0px; }
   @media screen and (max-width: 768px) {
     .burger-slider__item {
       -webkit-box-orient: vertical;
@@ -3634,29 +3646,44 @@ button {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      text-align: center; } }
+      text-align: center;
+      padding: 5rem 0rem; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .burger-slider__item {
+      padding: 4.375rem 0px; } }
 
 .burger-slider__picture {
-  width: 53%;
-  margin-left: 2.1875rem; }
+  width: 55%; }
   @media screen and (max-width: 768px) {
     .burger-slider__picture {
-      width: 85%; } }
+      width: 75%;
+      margin-bottom: 1.625rem; } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__picture {
+      width: 100%; } }
 
 .burger-slider__pic {
   max-width: 100%;
   display: block; }
 
 .burger-slider__desc {
-  width: 43%; }
+  width: 45%; }
   @media screen and (max-width: 768px) {
     .burger-slider__desc {
-      width: 80%; } }
+      width: 74%; } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__desc {
+      width: 89%; } }
 
 .burger-slider__ordered {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__ordered {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .burger-slider__title {
   font-family: "gagalinregular";
@@ -3664,6 +3691,14 @@ button {
   color: #fff;
   margin-bottom: 1.75rem;
   line-height: 0.89; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__title {
+      margin-bottom: 3.5rem; } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__title {
+      font-family: "gagalinregular";
+      font-size: 3.125rem;
+      color: #fff; } }
 
 .burger-slider__text {
   font-family: 'Ubuntu',sans-serif;
@@ -3677,28 +3712,96 @@ button {
   font-size: 4.5rem;
   letter-spacing: -0.9px;
   color: #e35028; }
+  @media screen and (max-width: 480px) {
+    .burger-slider__order-cost {
+      font-size: 3.15625rem; } }
 
 .burger-slider__order-text {
   font-size: 1.75rem;
   letter-spacing: -0.9px;
   color: #e35028;
   margin-right: 0.90625rem; }
+  @media screen and (max-width: 480px) {
+    .burger-slider__order-text {
+      font-size: 1.5rem;
+      margin-right: 0.8125rem; } }
 
 .odered__button {
   padding-top: 3.1875rem; }
+  @media screen and (max-width: 480px) {
+    .odered__button {
+      padding-top: 1.8125rem; } }
 
 .burger-slider__popup-button {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.875rem 1.375rem;
+  padding: 0.625rem 1.375rem;
   text-decoration: none;
   color: #fff;
   width: 5.625rem;
   height: 5.625rem;
   background-color: rgba(227, 80, 40, 0.4);
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__popup-button {
+      left: 16%; }
+      .burger-slider__popup-button .popup-button__exit {
+        top: 6px;
+        right: 6px;
+        width: 16px;
+        height: 3px;
+        background-color: rgba(227, 80, 40, 0.7);
+        opacity: 0.7;
+        position: absolute;
+        -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+        transform: translate3d(0, 10px, 0) rotate(45deg);
+        margin-right: 0.125rem; }
+        .burger-slider__popup-button .popup-button__exit:before {
+          content: "";
+          bottom: -20px;
+          left: 0;
+          width: 16px;
+          height: 3px;
+          position: absolute;
+          background-color: #e35028;
+          opacity: 0.7;
+          -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+          transform: translate3d(0, -20px, 0) rotate(-90deg); } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__popup-button {
+      left: 0; }
+      .burger-slider__popup-button .popup-button__exit {
+        top: 6px;
+        right: 6px;
+        width: 16px;
+        height: 3px;
+        background-color: rgba(227, 80, 40, 0.7);
+        opacity: 0.7;
+        position: absolute;
+        -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+        transform: translate3d(0, 10px, 0) rotate(45deg);
+        margin-right: 0.125rem; } }
+    @media screen and (max-width: 480px) and (max-width: 480px) {
+      .burger-slider__popup-button .popup-button__exit {
+        -webkit-transform: translate3d(-19px, 13px, 0) rotate(45deg);
+        transform: translate3d(-19px, 13px, 0) rotate(45deg); } }
+  @media screen and (max-width: 480px) {
+        .burger-slider__popup-button .popup-button__exit:before {
+          content: "";
+          bottom: -20px;
+          left: 0;
+          width: 16px;
+          height: 3px;
+          position: absolute;
+          background-color: #e35028;
+          opacity: 0.7;
+          -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+          transform: translate3d(0, -20px, 0) rotate(-90deg); } }
   .burger-slider__popup-button.active {
     background-color: #e35028; }
     .burger-slider__popup-button.active .burger-slider__popup-menu {
@@ -3715,12 +3818,13 @@ button {
   @media screen and (max-width: 768px) {
     .burger-slider__kkal {
       top: 0;
-      right: 0; } }
+      left: 73%; } }
 
 .burger-slider__kkal-weight {
-  position: absolute;
-  bottom: 2.5625rem;
-  left: 1.0625rem; }
+  margin-top: -38px; }
+
+.burger-slider__kkal-text {
+  padding-top: 0.5625rem; }
 
 .burger-slider__popup-menu {
   display: block;
@@ -3729,9 +3833,17 @@ button {
   position: absolute;
   left: -9999px;
   top: 0px;
-  width: 270px;
-  height: 332px;
+  width: 16.875rem;
+  height: 20.75rem;
   opacity: 0; }
+  @media screen and (max-width: 768px) {
+    .burger-slider__popup-menu {
+      width: 20.125rem;
+      height: 20.75rem; } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__popup-menu {
+      width: 23.25rem;
+      height: 20.75rem; } }
 
 .popup-menu__item {
   display: -webkit-box;
@@ -3746,19 +3858,53 @@ button {
   color: #2f3234; }
   .popup-menu__item:first-child {
     padding-top: 0.9375rem; }
+    @media screen and (max-width: 768px) {
+      .popup-menu__item:first-child {
+        padding-top: 1.25rem; } }
 
 .popup-menu__pic {
   width: 29%;
   margin: 0 0rem 0.5rem 1.5rem; }
+  @media screen and (max-width: 768px) {
+    .popup-menu__pic {
+      width: 19%; } }
 
 .popup-menu__title {
   width: 24%; }
+  @media screen and (max-width: 768px) {
+    .popup-menu__title {
+      width: 22%; } }
 
 .popup-menu__weight {
   width: 15%;
   font-weight: 300;
   margin-left: 2.5rem;
   text-align: right; }
+
+.arrow__left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media screen and (max-width: 768px) {
+    .arrow__left {
+      left: 5%; } }
+
+.arrow__right {
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media screen and (max-width: 768px) {
+    .arrow__right {
+      right: 3%; } }
+  @media screen and (max-width: 480px) {
+    .arrow__right {
+      right: -2%; } }
 
 .team {
   position: relative;
