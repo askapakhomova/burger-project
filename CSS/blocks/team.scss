@@ -63,7 +63,7 @@
     .accordeon__member-desk {
       margin-top: rem(10px);
       display: inline-flex;
-      height: 100%;
+      // height: 100%;
 
       @include tablets {
         display: flex;
@@ -72,6 +72,7 @@
       }
 
     }
+  }  // my
 
     .accordeon__picture {
       margin-right: rem(21px);
@@ -109,12 +110,10 @@
       margin-bottom: rem(12px);
     }
 
-
     .accordeon__text {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 300;
       font-size: rem(14px);
     }
   }
-}
 }

@@ -2,9 +2,6 @@
   position: relative;
   background: url('../img/section_menu/menu-bg.png') center center / cover no-repeat;
 
-  // @include tablets{
-  //   max-width: 786px;
-  // }
 }
 
 .title--color--white {
@@ -53,12 +50,14 @@
 
 }
 
-.accordeon-menu__item .accordeon-menu__text {
+.accordeon-menu__item .accordeon-menu__text { 
   overflow: hidden;
-  max-width: 0;
+  width: 0; 
+  transition: .1s linear;
 }
 
 .accordeon-menu__item {
+ 
   &--active {
     @include phones {
       position: absolute;
@@ -71,7 +70,7 @@
     .accordeon-menu__text {
       background: rgba(18, 19, 20, .8);
       transition: .3s linear;
-      max-width: rem(630px);
+      width: rem(650px);
       color: #fff;
 
       @include tablets {

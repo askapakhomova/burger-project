@@ -1,5 +1,5 @@
 var burgerPopup = document.querySelector('#burgerPopup');
-var burgerPopupAnimated = document.querySelector('#burgerPopupAnimated');
+
 
 function openBurgerPopup() {
   burgerPopup.classList.add('active');

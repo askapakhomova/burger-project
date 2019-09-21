@@ -3819,6 +3819,9 @@ button {
     .burger-slider__kkal {
       top: 0;
       left: 73%; } }
+  @media screen and (max-width: 480px) {
+    .burger-slider__kkal {
+      left: 87%; } }
 
 .burger-slider__kkal-weight {
   margin-top: -38px; }
@@ -3961,8 +3964,7 @@ button {
     margin-top: 0.625rem;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
-    display: inline-flex;
-    height: 100%; }
+    display: inline-flex; }
     @media screen and (max-width: 768px) {
       .accordeon .accordeon__item--active .accordeon__member-desk {
         display: -webkit-box;
@@ -3975,33 +3977,33 @@ button {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center; } }
-  .accordeon .accordeon__item--active .accordeon__picture {
+  .accordeon .accordeon__item .accordeon__picture {
     margin-right: 1.3125rem;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden; }
     @media screen and (max-width: 768px) {
-      .accordeon .accordeon__item--active .accordeon__picture {
+      .accordeon .accordeon__item .accordeon__picture {
         margin-right: 0;
         margin-bottom: 1.375rem; } }
-  .accordeon .accordeon__item--active .accordeon__img {
+  .accordeon .accordeon__item .accordeon__img {
     max-width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover; }
-  .accordeon .accordeon__item--active .accordeon__desc {
+  .accordeon .accordeon__item .accordeon__desc {
     max-width: 47%;
     vertical-align: top; }
     @media screen and (max-width: 768px) {
-      .accordeon .accordeon__item--active .accordeon__desc {
+      .accordeon .accordeon__item .accordeon__desc {
         max-width: 63%; } }
-  .accordeon .accordeon__item--active .accordeon__title {
+  .accordeon .accordeon__item .accordeon__title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 0.875rem;
     margin-bottom: 0.75rem; }
-  .accordeon .accordeon__item--active .accordeon__text {
+  .accordeon .accordeon__item .accordeon__text {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 0.875rem; }
@@ -4062,7 +4064,10 @@ button {
 
 .accordeon-menu__item .accordeon-menu__text {
   overflow: hidden;
-  max-width: 0; }
+  width: 0;
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear; }
 
 @media screen and (max-width: 480px) {
   .accordeon-menu__item--active {
@@ -4078,7 +4083,7 @@ button {
   -webkit-transition: .3s linear;
   -o-transition: .3s linear;
   transition: .3s linear;
-  max-width: 39.375rem;
+  width: 40.625rem;
   color: #fff; }
   @media screen and (max-width: 768px) {
     .accordeon-menu__item--active .accordeon-menu__text {

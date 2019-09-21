@@ -219,6 +219,10 @@ justify-content: center;
     top:0;
     left: 73%;
   }
+  @include phones {
+   
+    left: 87%;
+  }
 }
 .burger-slider__kkal-weight {
   margin-top: -38px;

@@ -248,7 +248,7 @@
       <div class="team__hover">
         <div class="title">команда</div>
         <div class="accordeon">
-          <ul class="accordeon__list">
+          <ul class="accordeon__list" id="acco-team">
             <li class="accordeon__item">
               <a href="#" class="title title--color--white--arrow">Дэниэл Редклиф</a>
               <div class="accordeon__member-desk">
@@ -265,9 +265,9 @@
                 </div>
               </div>
             </li>
-            <li class="accordeon__item accordeon__item--active">
+            <li class="accordeon__item">
               <a href="#" class="title title--color--white--arrow">Ричард Джеймс</a>
-              <div class="accordeon__member-desk accordeon__member-desk">
+              <div class="accordeon__member-desk">
                 <div class="accordeon__picture">
                   <img src="img/section_team/photo_1.png" alt="" class="accordeon__img">
                 </div>
@@ -324,7 +324,7 @@
     </section>
     <section class="section menu">
       <div class="title title--color--white">меню</div>
-      <ul class="accordeon-menu__list">
+      <ul class="accordeon-menu__list" id="acco-menu">
         <li class="accordeon-menu__item">
           <a href="#" class="accordeon-menu__content" style="background-image: url('img/section_menu/meat.png')">
             <div class="accordeon-menu__title">для мясоедов</div>
@@ -340,7 +340,7 @@
           </div>
         </li>
         <li class="accordeon-menu__item">
-          <a href="" class="accordeon-menu__content" style="background-image: url('img/section_menu/vegan.png')">
+          <a href="#" class="accordeon-menu__content" style="background-image: url('img/section_menu/vegan.png')">
             <div class="accordeon-menu__title">вегетарианское</div>
           </a>
           <div class="accordeon-menu__text">
@@ -353,7 +353,7 @@
             </p>
           </div>
         </li>
-        <li class="accordeon-menu__item  accordeon-menu__item--active">
+        <li class="accordeon-menu__item" >
           <a href="" class="accordeon-menu__content" style="background-image: url('img/section_menu/diet.png')">
             <div class="accordeon-menu__title">диетическое</div>
           </a>
@@ -651,6 +651,8 @@
   </div>
   <script type="text/javascript" src="./js/hamburger.js"></script>
   <script type="text/javascript" src="./js/burgerPopup.js"></script>
+  <script type="text/javascript" src="./js/acco-menu.js"></script>
+  <script type="text/javascript" src="./js/acco-team.js"></script>
 </body>
 
 </html>
