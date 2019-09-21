@@ -4,7 +4,8 @@ accoTeam.addEventListener('click', function(e) {
   e.preventDefault();
   let target = e.target;
   let currentTarget = target.parentElement;
-
+  let desc = document.querySelector('.accordeon__member-desk');
+  let currentDesc = target.nextElementSibling;
 
   function clear() {
     var activeContent = document.querySelector('.accordeon__item--active');
@@ -14,15 +15,15 @@ accoTeam.addEventListener('click', function(e) {
   }
 
  function setHeight() {
-  let desc = document.querySelector('.accordeon__member-desk');
+  // let desc = document.querySelector('.accordeon__member-desk');
  let currentHeight = currentTarget.scrollHeight;
- desc.style.height = currentHeight + '%';
+ currentDesc.style.height = currentHeight + '%';
 }
  
  
 
 function resetHeight() {
-  desc.style.height = 0;
+  currentDesc.style.height = 0;
   }
 
 
