@@ -3,7 +3,7 @@ let accoMenu = document.querySelector('#acco-menu');
 accoMenu.addEventListener('click', function(e) {
   e.preventDefault();
   let target = e.target;
-  let currenttarget = target.parentElement;
+  let currentTarget = target.parentElement;
 
   function clear() {
     let activeContent = document.querySelector('.accordeon-menu__item--active');
@@ -19,11 +19,11 @@ accoMenu.addEventListener('click', function(e) {
 
 
   if(target.classList.contains('accordeon-menu__content')) {
-    if(currenttarget.classList.contains('accordeon-menu__item--active')) {
-      currenttarget.classList.remove('accordeon-menu__item--active');
+    if(currentTarget.classList.contains('accordeon-menu__item--active')) {
+      currentTarget.classList.remove('accordeon-menu__item--active');
     } else {
       clear();
-   currenttarget.classList.add('accordeon-menu__item--active');
+   currentTarget.classList.add('accordeon-menu__item--active');
     // setWidth();
   }
 }
