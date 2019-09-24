@@ -35,8 +35,7 @@
 .accordeon__item {
   margin-bottom: rem(35px);
   a.title--color--white--arrow {
-    text-decoration: none;
- 
+    text-decoration: none; 
   }
 
   @include tablets {

@@ -1,19 +1,21 @@
 let accoTeam = document.querySelector('#acco-team');
 
+
 accoTeam.addEventListener('click', function(e) {
   e.preventDefault();
   let target = e.target;
   let currentTarget = target.parentElement;
-  var desc = document.querySelector('.accordeon__member-desk');
   var currentDesc = target.nextElementSibling;
 
   function clear() {
     var activeContent = document.querySelector('.accordeon__item--active');
-  if(activeContent) {
+  if(activeContent) { 
     activeContent.classList.remove('accordeon__item--active');
-    resetHeight(desc);
+    resetHeight(activeContent.lastElementChild);
+  
+    }
   }
-}
+
 
  function setHeight() {
  let currentHeight = currentTarget.scrollHeight;
@@ -32,14 +34,12 @@ function resetHeight(element) {
       currentTarget.classList.remove('accordeon__item--active');
       resetHeight(currentDesc);
     } else {
+
       clear();
    currentTarget.classList.add('accordeon__item--active');
      setHeight();
- 
-
 
   }
 }
   }
-
 );

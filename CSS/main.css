@@ -4032,20 +4032,26 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media screen and (max-width: 768px) {
+    .accordeon-menu__list {
+      width: 100%; } }
 
 .accordeon-menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .accordeon-menu__content {
   position: relative;
   background: center center no-repeat / cover;
-  min-width: 5rem;
+  width: 5rem;
   text-decoration: none; }
 
 .accordeon-menu__title {
@@ -4069,6 +4075,11 @@ button {
   -o-transition: .1s linear;
   transition: .1s linear; }
 
+.accordeon-menu__item--active .accordeon-menu__title {
+  font-family: "gagalinregular";
+  font-size: 2.1875rem;
+  color: #f9b43b; }
+
 @media screen and (max-width: 480px) {
   .accordeon-menu__item--active {
     position: absolute;
@@ -4079,15 +4090,11 @@ button {
     z-index: 2; } }
 
 .accordeon-menu__item--active .accordeon-menu__text {
-  background: rgba(18, 19, 20, 0.8);
+  background: rgba(71, 74, 75, 0.9);
   -webkit-transition: .3s linear;
   -o-transition: .3s linear;
   transition: .3s linear;
-  width: 40.625rem;
   color: #fff; }
-  @media screen and (max-width: 768px) {
-    .accordeon-menu__item--active .accordeon-menu__text {
-      max-width: 36.25rem; } }
   @media screen and (max-width: 480px) {
     .accordeon-menu__item--active .accordeon-menu__text .acco__exit {
       top: 6px;
@@ -4112,9 +4119,8 @@ button {
 .accordeon-menu__item .menu__text {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  max-width: 100%;
   line-height: 1.8;
-  padding: 3.125rem 1.5625rem; }
+  padding: 15% 7%; }
 
 .reviews__list {
   height: 100%;

@@ -22,19 +22,24 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   justify-content: flex-end;
+
+  @include tablets {
+    width: 100%;
+  }
 
 }
 
 .accordeon-menu__item {
   display: flex;
+  justify-content: flex-end;
 }
 
 .accordeon-menu__content {
   position: relative;
   background: center center no-repeat / cover;
-  min-width: rem(80px);
+  width: rem(80px);
   text-decoration: none;
 }
 
@@ -59,6 +64,9 @@
 .accordeon-menu__item {
  
   &--active {
+    .accordeon-menu__title {
+      @include gagalin(rem(35px), $yellow);
+    }
     @include phones {
       position: absolute;
       left: 0;
@@ -68,13 +76,13 @@
       z-index: 2;
     }
     .accordeon-menu__text {
-      background: rgba(18, 19, 20, .8);
+      background: rgba(#474a4b, .9);
       transition: .3s linear;
-      width: rem(650px);
+      // width: 63%;
       color: #fff;
 
       @include tablets {
-        max-width: rem(580px);
+        // max-width: rem(580px);
       }
       @include phones {
         .acco__exit {
@@ -100,12 +108,11 @@
       }
       }
     }
-    .menu__text {
+      .menu__text {
     
-      font-family: 'Ubuntu', sans-serif;
-      font-weight: 500;
-      max-width: 100%;
-      line-height: 1.8;
-      padding: rem(50px) rem(25px);
-    }
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+        line-height: 1.8;
+        padding: 15% 7%;
+      }
   }
