@@ -39,7 +39,7 @@
 .accordeon-menu__content {
   position: relative;
   background: center center no-repeat / cover;
-  width: rem(80px);
+  min-width: rem(80px);
   text-decoration: none;
 }
 
@@ -58,7 +58,6 @@
 .accordeon-menu__item .accordeon-menu__text { 
   overflow: hidden;
   width: 0; 
-  transition: .1s linear;
 }
 
 .accordeon-menu__item {
@@ -78,7 +77,6 @@
     .accordeon-menu__text {
       background: rgba(#474a4b, .9);
       transition: .3s linear;
-      // width: 63%;
       color: #fff;
 
       @include tablets {

@@ -3598,7 +3598,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-height: 100%;
+  max-height: 40.625rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
@@ -3621,7 +3621,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative; }
+  position: relative;
+  right: 0%; }
 
 .burger-slider__item {
   display: -webkit-box;
@@ -3633,7 +3634,9 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 3.125rem 0px; }
+  padding: 3.125rem 0px;
+  min-width: 100%;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .burger-slider__item {
       -webkit-box-orient: vertical;
@@ -3650,10 +3653,10 @@ button {
       padding: 5rem 0rem; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     .burger-slider__item {
-      padding: 4.375rem 0px; } }
+      padding: 3.125rem 0px; } }
 
 .burger-slider__picture {
-  width: 55%; }
+  width: 52%; }
   @media screen and (max-width: 768px) {
     .burger-slider__picture {
       width: 75%;
@@ -3898,7 +3901,7 @@ button {
 .arrow__right {
   position: absolute;
   top: 50%;
-  right: -8%;
+  right: -4%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
@@ -3989,7 +3992,7 @@ button {
         margin-bottom: 1.375rem; } }
   .accordeon .accordeon__item .accordeon__img {
     max-width: 100%;
-    height: 100%;
+    height: 6.25rem;
     -o-object-fit: cover;
     object-fit: cover; }
   .accordeon .accordeon__item .accordeon__desc {
@@ -4051,7 +4054,7 @@ button {
 .accordeon-menu__content {
   position: relative;
   background: center center no-repeat / cover;
-  width: 5rem;
+  min-width: 5rem;
   text-decoration: none; }
 
 .accordeon-menu__title {
@@ -4070,10 +4073,7 @@ button {
 
 .accordeon-menu__item .accordeon-menu__text {
   overflow: hidden;
-  width: 0;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear; }
+  width: 0; }
 
 .accordeon-menu__item--active .accordeon-menu__title {
   font-family: "gagalinregular";

@@ -19,7 +19,7 @@ accoTeam.addEventListener('click', function(e) {
 
  function setHeight() {
  let currentHeight = currentTarget.scrollHeight;
- currentDesc.style.height = currentHeight + '%';
+ currentDesc.style.height = currentHeight + 'px';
 }
  
  

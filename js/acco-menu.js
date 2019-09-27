@@ -16,9 +16,19 @@ accoMenu.addEventListener('click', function(e) {
 }
 
  function setWidth() {
- var currentWidth = currentDesc.scrollWidth -20;
- currentDesc.style.width = currentWidth + '%';
- }
+  // узнаём ширину окна
+  let windowSize = document.body.clientWidth;
+  if (windowSize < 800) {
+  // узнаём ширину кнопки
+  let tabSize = document.querySelector('.accordeon-menu__content').offsetWidth;
+  // высчитываем размер контента исходя из полученных данных
+  let currentWidth = windowSize - (tabSize * 3);
+  } else {
+    currentWidth = 530;
+  }
+  // задаём новый размер нашему контенту
+  currentDesc.style.width = currentWidth + 'px';
+}
 
   function resetWidth(element) {
   element.style.width = 0;
