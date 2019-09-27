@@ -302,11 +302,11 @@ margin: 0 rem(0px) rem(8px) rem(24px);
   .arrow__left {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 0%;
     transform: translate(-50%, -50%);
 
     @include tablets {
-left: 5%;
+    left: 5%;
     }
   }
 
