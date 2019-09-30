@@ -35,7 +35,7 @@ justify-content: center;
   justify-content: space-between;
   padding: rem(50px) 0px;
   min-width: 100%;
-  position: relative;
+  position: relative;  
 
   @include tablets {
   flex-direction: column;
@@ -49,6 +49,7 @@ justify-content: center;
   }
 }
 }
+
 .burger-slider__picture {
   width: 52%;
 
@@ -143,11 +144,6 @@ justify-content: center;
   background-color:rgba(#e35028, 0.4);
   border-radius: 5px;
   transition: .3s linear;
-  
-  // &:hover {
-  //   cursor: pointer;
-  // }
- 
 
   @include tablets {
   left: 16%;
@@ -174,6 +170,13 @@ justify-content: center;
         opacity: 0.7;
         transform: translate3d(0, -20px, 0) rotate(-90deg);
       }     
+    }
+  }
+  &.active {
+    background-color: $red;
+    .burger-slider__popup-menu {
+      opacity: 1;
+      left: 100%;
     }
   }
 @include phones {
@@ -207,15 +210,8 @@ justify-content: center;
       }     
 }
   }
+  }
 
-&.active {
-  background-color: $red;
-  .burger-slider__popup-menu {
-    opacity: 1;
-    left: 100%;
-  }
-}
-  }
 
 .burger-slider__kkal {
   position: absolute;
@@ -304,13 +300,16 @@ margin: 0 rem(0px) rem(8px) rem(24px);
     top: 50%;
     left: 0%;
     transform: translate(-50%, -50%);
+   
 
     @include tablets {
     left: 5%;
+    z-index: 4;
     }
   }
 
   .arrow__right {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     right: -4%;
@@ -321,6 +320,7 @@ margin: 0 rem(0px) rem(8px) rem(24px);
     }
     @include phones {
       right: -2%;
+      z-index: 4;
     }
   }
 

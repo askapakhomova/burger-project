@@ -14,20 +14,20 @@ function closeHamburger() {
 
 hamburgerButton.addEventListener('click', function (e) {
   e.preventDefault();
-  if(hamburgerButton.classList.contains('is-active')){
+  if (hamburgerButton.classList.contains('is-active')) {
     closeHamburger();
   } else {
-   openHaburger();
+    openHaburger();
   }
 });
 
 hamburgerMenu.addEventListener('click', function (e) {
   e.preventDefault();
-  if(e.target.classList.contains('nav__link')){
+  if (e.target.classList.contains('nav__link')) {
     hamburgerMenu.classList.add('fadeOut');
     setTimeout(() => {
-    closeHamburger();
-    hamburgerMenu.classList.remove('fadeOut');
-  }, 400);
+      closeHamburger();
+      hamburgerMenu.classList.remove('fadeOut');
+    }, 400);
   }
 });

@@ -19,12 +19,12 @@
     &--left {
       width: rem(29px);
       height: rem(27px);
-      transform: translate(-50%) rotate(90deg);
+      transform: rotate(90deg);
     }
     &--right {
       width: rem(29px);
       height: rem(27px);
-      transform: translate(50%) rotate(-90deg);
+      transform:rotate(-90deg);
     }
   }
 

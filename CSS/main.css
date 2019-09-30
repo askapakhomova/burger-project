@@ -3002,15 +3002,15 @@ button {
   .icon--arrow-scroll--left {
     width: 1.8125rem;
     height: 1.6875rem;
-    -webkit-transform: translate(-50%) rotate(90deg);
-    -ms-transform: translate(-50%) rotate(90deg);
-    transform: translate(-50%) rotate(90deg); }
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
   .icon--arrow-scroll--right {
     width: 1.8125rem;
     height: 1.6875rem;
-    -webkit-transform: translate(50%) rotate(-90deg);
-    -ms-transform: translate(50%) rotate(-90deg);
-    transform: translate(50%) rotate(-90deg); }
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
 
 .icon--meat {
   width: 6.0625rem;
@@ -3346,7 +3346,8 @@ button {
   font-weight: 500;
   color: #fff;
   font-size: 0.8125rem;
-  margin-right: 1.5625rem; }
+  margin-right: 1.5625rem;
+  text-decoration: none; }
   .button--slider {
     padding: 0.75rem 1rem;
     margin-right: 0;
@@ -3775,6 +3776,11 @@ button {
           opacity: 0.7;
           -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
           transform: translate3d(0, -20px, 0) rotate(-90deg); } }
+  .burger-slider__popup-button.active {
+    background-color: #e35028; }
+    .burger-slider__popup-button.active .burger-slider__popup-menu {
+      opacity: 1;
+      left: 100%; }
   @media screen and (max-width: 480px) {
     .burger-slider__popup-button {
       left: 0; }
@@ -3805,11 +3811,6 @@ button {
           opacity: 0.7;
           -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
           transform: translate3d(0, -20px, 0) rotate(-90deg); } }
-  .burger-slider__popup-button.active {
-    background-color: #e35028; }
-    .burger-slider__popup-button.active .burger-slider__popup-menu {
-      opacity: 1;
-      left: 100%; }
 
 .burger-slider__kkal {
   position: absolute;
@@ -3896,9 +3897,11 @@ button {
   transform: translate(-50%, -50%); }
   @media screen and (max-width: 768px) {
     .arrow__left {
-      left: 5%; } }
+      left: 5%;
+      z-index: 4; } }
 
 .arrow__right {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   right: -4%;
@@ -3910,7 +3913,8 @@ button {
       right: 3%; } }
   @media screen and (max-width: 480px) {
     .arrow__right {
-      right: -2%; } }
+      right: -2%;
+      z-index: 4; } }
 
 .team {
   position: relative;

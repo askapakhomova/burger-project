@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -48,13 +48,12 @@
               <!-- </nav> -->
             </nav>
             <div class="menu__buttons">
-              <button class="button" type="submit">заказать</button>
+              <a href="#" class="button">заказать</a>
               <a href="" id="hamburgerButton" class="header__hamburger-button hamburger hamburger--slider">
                 <div class="hamburger-box">
                   <div class="hamburger-inner"></div>
                 </div>
               </a>
-              <!-- slider -->
             </div>
           </div>
         </header>
@@ -140,7 +139,7 @@
         </a>
         <div class="burger-slider__slider">
           <ul class="burger-slider__list" id="slider">
-            <li class="burger-slider__item">
+            <li class="burger-slider__item active">
               <div class="burger-slider__picture">
                 <img src="./img/burger_slider/burger-slider.png" alt="" class="burger-slider__pic">
               </div>
@@ -235,7 +234,6 @@
                   <div class="burger-slider__kkal-text">kkal</div>
               </div>
             </li>
-            <!-- slider -->
             <li class="burger-slider__item">
               <div class="burger-slider__picture">
                 <img src="./img/burger_slider/Chiken burger.png" alt="" class="burger-slider__pic">
@@ -616,7 +614,6 @@
                   <div class="burger-slider__kkal-text">kkal</div>
               </div>
             </li>
-            <!-- end -->
           </ul>
         </div>
         <a href="#" class="arrow__right" id="right">
@@ -754,7 +751,7 @@
       </ul>
     </section>
     <section class="section reviews">
-      <ul class="reviews__list">
+      <ul class="reviews__list" id="reviews">
         <li class="reviews__item" style="background-image: url('img/photo_1.png')">
           <div class="reviews__hover">
             <div class="reviews__name">Константин спилберг</div>
@@ -874,16 +871,18 @@
       <div class="container">
         <div class="title title--center">закажите доставку</div>
         <div class="form__feedback">
-          <form action="" class="form__content">
+          <form action="" class="form__content" id="myForm" enctype="multipart/form-data" method="POST">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name" required>
+                  <div class="error"></div>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone" required>
+                  <div class="error"></div>
                 </label>
               </div>
               <div class="form__row">
@@ -914,7 +913,7 @@
             <div class="form__col">
               <label class="form__block">
                 <div class="form__title">Комментарий</div>
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea class="form__input form__input--textarea" name="comment"></textarea>
               </label>
               <div class="form__buttons">
                 <div class="form__row form__row--radio">
@@ -938,10 +937,10 @@
                 </div>
                 <div class="form__row">
                   <div class="form__button">
-                    <button class="button" type="submit">заказать</button>
+                    <button class="button" type="submit" id="order">заказать</button>
                   </div>
                   <div class="form__button">
-                    <button class="button button--nonactive" type="button">Очистить</button>
+                    <button class="button button--nonactive" type="button" id="clear">Очистить</button>
                   </div>
                 </div>
               </div>
@@ -1034,10 +1033,29 @@
     </ul>
   </div>
   <script type="text/javascript" src="./js/hamburger.js"></script>
-  <script type="text/javascript" src="./js/burgerPopup.js"></script>
   <script type="text/javascript" src="./js/acco-menu.js"></script>
   <script type="text/javascript" src="./js/acco-team.js"></script>
   <script type="text/javascript" src="./js/slider.js"></script>
+  <script type="text/javascript" src="./js/form.js"></script>
+  <script type="text/javascript" src="./js/overlay.js"></script>
+  <script type="template" id="overlayTemplate">
+    <div class="overlay">
+      <div class="overlay__container">
+        <div class="overlay__title"></div>
+        <div class="overlay__content"></div>
+        <a href="" class="overlay__close btn btn-red" href="#"></a>
+      </div>
+    </div>
+  </script>
+  <script type="template" id="overlayTemplate">
+    <div class="overlay">
+      <div class="overlay__container">
+        <div class="overlay__title"></div>
+        <div class="overlay__content"></div>
+        <a href="#" class="overlay__close button" href="#">закрыть</a>
+      </div>
+    </div>
+  </script>
 </body>
 
 </html>
