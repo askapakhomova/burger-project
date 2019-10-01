@@ -44,7 +44,10 @@
   }
 
 .reviews__name {
-  @include gagalin(rem(14px), white);
+  font-family: 'gagalinregular';
+  color: #fff;
+  font-size: rem(14px);
+
 
   @include tablets {
     text-align: center;

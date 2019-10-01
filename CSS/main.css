@@ -4168,9 +4168,9 @@ button {
       padding: 0; } }
 
 .reviews__name {
-  font-family: "gagalinregular";
-  font-size: 0.875rem;
-  color: white; }
+  font-family: 'gagalinregular';
+  color: #fff;
+  font-size: 0.875rem; }
   @media screen and (max-width: 768px) {
     .reviews__name {
       text-align: center;
@@ -4194,6 +4194,127 @@ button {
   @media screen and (max-width: 480px) {
     .reviews__text {
       display: none; } }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  z-index: 1000;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
+  background-color: rgba(47, 50, 52, 0.9); }
+
+.overlay__container {
+  width: 28.75rem;
+  height: 15.875rem;
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: left; }
+
+.overlay__title {
+  font-family: 'gagalinregular';
+  font-size: 1.5rem;
+  margin-bottom: 0.9375rem;
+  color: #2f3234; }
+
+.overlay__content {
+  font-family: 'Ubuntu';
+  font-size: 1rem;
+  color: #8a8c8c; }
+
+.overlay__close {
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 3px;
+  background-color: rgba(227, 80, 40, 0.7);
+  opacity: 0.7;
+  position: absolute;
+  -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+  margin-right: 0.125rem; }
+  .overlay__close:before {
+    content: "";
+    bottom: -20px;
+    left: 0;
+    width: 16px;
+    height: 3px;
+    position: absolute;
+    background-color: #e35028;
+    opacity: 0.7;
+    -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+    transform: translate3d(0, -20px, 0) rotate(-90deg); }
+
+.overlayForm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  z-index: 1000;
+  background-color: rgba(47, 50, 52, 0.9); }
+
+.overlay-form__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 1, 0.5);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 1, 0.5);
+  background-color: #ffffff;
+  width: 18.5rem;
+  height: 12.875rem; }
+
+.overlay-form__content {
+  margin-bottom: 1.875rem; }
+
+.overlay-form__close {
+  padding: 0.75rem 1.1875rem;
+  border-radius: 0.3125rem;
+  background: #e35028;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 0.8125rem;
+  text-decoration: none; }
 
 .form {
   position: relative;
